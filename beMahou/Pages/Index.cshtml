@@ -1,0 +1,83 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Mahou Experiences";
+}
+
+<div class="container-fluid">
+    <div class="row justify-content-between mb-4">
+        <div class="col-auto">
+            <h1 class="text-danger">Mahou Experiences</h1>
+        </div>
+        <div class="col-auto">
+            <div class="btn-group" role="group">
+                <button id="mobileView" class="btn btn-outline-dark active">
+                    <i class="fas fa-mobile-alt"></i>
+                </button>
+                <button id="desktopView" class="btn btn-outline-dark">
+                    <i class="fas fa-desktop"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        @foreach (var pub in Model.Publicaciones)
+        {
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card shadow-sm">
+                    @if (!string.IsNullOrEmpty(pub.FotoUrl))
+                    {
+                        <img src="@pub.FotoUrl" class="card-img-top" alt="Experiencia Mahou">
+                    }
+                    <div class="card-body">
+                        <h5 class="card-title text-danger">@pub.Bar</h5>
+                        <p class="card-text">@pub.Experiencia</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <small class="text-muted">@pub.Fecha.ToString("g")</small>
+                            <span class="badge bg-dark">@pub.Categoria</span>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white">
+                        <button class="btn btn-sm btn-outline-danger star-btn" data-id="@pub.Id">
+                            <i class="fas fa-star"></i> <span class="star-count">@pub.Estrellas</span>
+                        </button>
+                        <button class="btn btn-sm btn-outline-dark comentario-btn" data-id="@pub.Id">
+                            <i class="fas fa-comment"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // Cambio entre vistas móvil/desktop
+        document.getElementById('mobileView').addEventListener('click', function() {
+            document.body.classList.add('mobile-view');
+            this.classList.add('active');
+            document.getElementById('desktopView').classList.remove('active');
+        });
+        
+        document.getElementById('desktopView').addEventListener('click', function() {
+            document.body.classList.remove('mobile-view');
+            this.classList.add('active');
+            document.getElementById('mobileView').classList.remove('active');
+        });
+
+        // Lógica para estrellas y comentarios
+        document.querySelectorAll('.star-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const pubId = this.getAttribute('data-id');
+                // Llamada API para sumar estrella
+                fetch(`/api/publicaciones/${pubId}/estrella`, { method: 'POST' })
+                    .then(response => response.json())
+                    .then(data => {
+                        this.querySelector('.star-count').textContent = data.estrellas;
+                    });
+            });
+        });
+    </script>
+}

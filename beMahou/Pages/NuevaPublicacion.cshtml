@@ -1,0 +1,37 @@
+@page
+@model NuevaPublicacionModel
+@{
+    ViewData["Title"] = "Comparte tu Experiencia Mahou";
+}
+
+<div class="container">
+    <h2 class="text-danger mb-4">@ViewData["Title"]</h2>
+    
+    <form method="post" enctype="multipart/form-data">
+        <div class="mb-3">
+            <label asp-for="Publicacion.Bar" class="form-label">Bar</label>
+            <input asp-for="Publicacion.Bar" class="form-control" placeholder="Ej: Bar Casa Pepe">
+            <span asp-validation-for="Publicacion.Bar" class="text-danger"></span>
+        </div>
+        
+        <div class="mb-3">
+            <label asp-for="Publicacion.Experiencia" class="form-label">Tu Experiencia Mahou</label>
+            <textarea asp-for="Publicacion.Experiencia" class="form-control" rows="3" 
+                      placeholder="Ej: 'Como en Bar Casa Pepe en ningún sitio...'"></textarea>
+            <span asp-validation-for="Publicacion.Experiencia" class="text-danger"></span>
+        </div>
+        
+        <div class="mb-3">
+            <label asp-for="Publicacion.Categoria" class="form-label">Categoría</label>
+            <select asp-for="Publicacion.Categoria" asp-items="Html.GetEnumSelectList<Categoria>()" 
+                    class="form-select"></select>
+        </div>
+        
+        <div class="mb-3">
+            <label asp-for="Imagen" class="form-label">Foto (opcional)</label>
+            <input asp-for="Imagen" class="form-control" type="file" accept="image/*">
+        </div>
+        
+        <button type="submit" class="btn btn-danger">Compartir Experiencia</button>
+    </form>
+</div>
