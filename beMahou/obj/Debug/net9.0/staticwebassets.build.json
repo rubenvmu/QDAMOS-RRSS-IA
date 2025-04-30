@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wNcORO/5lr+jd6vy05glAB7rFcXf/GPCW3mD9eYg2n4=",
+  "Hash": "i6Bl32IKs9VARv8lkj6BAl+lRkDFP3DDB4ST1ca7ByA=",
   "Source": "beMahou",
   "BasePath": "_content/beMahou",
   "Mode": "Default",
@@ -5433,6 +5433,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/lib/jquery/LICENSE.txt"
+    },
+    {
+      "Identity": "/Users/rubenvmu/beMahou/beMahou/wwwroot/uploads/38724b63-2774-4c60-97c3-6de4366263e4.png",
+      "SourceId": "beMahou",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/rubenvmu/beMahou/beMahou/wwwroot/",
+      "BasePath": "_content/beMahou",
+      "RelativePath": "uploads/38724b63-2774-4c60-97c3-6de4366263e4#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6pt4qpqw91",
+      "Integrity": "Wm3UqRTuUlVyzLaVvxtHsgfJU4OsmUEchau5Lan3aI8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/38724b63-2774-4c60-97c3-6de4366263e4.png"
     }
   ],
   "Endpoints": [
@@ -36045,6 +36066,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-F1wMlgb/juW08DFUssW6Pm9EBKfjXXRiSK0F5FgXxJU="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/38724b63-2774-4c60-97c3-6de4366263e4.6pt4qpqw91.png",
+      "AssetFile": "/Users/rubenvmu/beMahou/beMahou/wwwroot/uploads/38724b63-2774-4c60-97c3-6de4366263e4.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "643144"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Wm3UqRTuUlVyzLaVvxtHsgfJU4OsmUEchau5Lan3aI8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 30 Apr 2025 21:23:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6pt4qpqw91"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/38724b63-2774-4c60-97c3-6de4366263e4.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Wm3UqRTuUlVyzLaVvxtHsgfJU4OsmUEchau5Lan3aI8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/38724b63-2774-4c60-97c3-6de4366263e4.png",
+      "AssetFile": "/Users/rubenvmu/beMahou/beMahou/wwwroot/uploads/38724b63-2774-4c60-97c3-6de4366263e4.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "643144"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Wm3UqRTuUlVyzLaVvxtHsgfJU4OsmUEchau5Lan3aI8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 30 Apr 2025 21:23:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Wm3UqRTuUlVyzLaVvxtHsgfJU4OsmUEchau5Lan3aI8="
         }
       ]
     }

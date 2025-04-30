@@ -265,6 +265,10 @@
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.slim.min.map"
     },
     {
+      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/uploads/38724b63-2774-4c60-97c3-6de4366263e4.png",
+      "PackagePath": "staticwebassets/uploads/38724b63-2774-4c60-97c3-6de4366263e4.png"
+    },
+    {
       "Id": "obj/Debug/net9.0/staticwebassets/msbuild.beMahou.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
