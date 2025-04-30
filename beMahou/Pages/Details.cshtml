@@ -1,0 +1,67 @@
+@page
+@model beMahou.Pages.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Publicacion</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Publicacion.Usuario)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Publicacion.Usuario)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Publicacion.Bar)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Publicacion.Bar)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Publicacion.Experiencia)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Publicacion.Experiencia)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Publicacion.Fecha)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Publicacion.Fecha)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Publicacion.Estrellas)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Publicacion.Estrellas)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Publicacion.FotoPath)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Publicacion.FotoPath)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Publicacion.Evento)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Publicacion.Evento)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Publicacion.UsuarioId)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Publicacion.UsuarioId)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Publicacion.Id">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

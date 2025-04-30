@@ -1,22 +1,29 @@
 using System.ComponentModel.DataAnnotations;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Globalization;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.EntityFrameworkCore;
-using System.Linq;
 
-public class UsuarioMahou
+namespace beMahou.Models
 {
-    [Required]
-    public required string Id { get; set; }
-    
-    [Required]
-    public required string Nombre { get; set; }
-    
-    public int EstrellasAcumuladas { get; set; } = 0;
-    
-    public List<Publicacion> Publicaciones { get; set; } = new List<Publicacion>();
+    public class UsuarioMahou
+    {
+        [Key]
+        public string Id { get; set; } = Guid.NewGuid().ToString();
+
+        [Required(ErrorMessage = "El nombre es obligatorio")]
+        [Display(Name = "Nombre de usuario")]
+        [StringLength(100, ErrorMessage = "El nombre no puede exceder 100 caracteres")]
+        public string Nombre { get; set; } = string.Empty;
+
+        [Display(Name = "Estrellas acumuladas")]
+        public int EstrellasAcumuladas { get; set; } = 0;
+
+        [Display(Name = "Avatar")]
+        [StringLength(255)]
+        public string? AvatarPath { get; set; }
+
+        [Required]
+        [StringLength(450)]
+        public string UsuarioId { get; set; } = string.Empty;
+
+        public List<Publicacion> Publicaciones { get; set; } = new List<Publicacion>();
+    }
 }

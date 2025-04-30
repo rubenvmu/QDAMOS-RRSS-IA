@@ -1,7 +1,9 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using beMahou.Data;
-using Microsoft.AspNetCore.Identity.UI.Services;
+using Microsoft.Extensions.FileProviders;
+using System.IO;
+using Microsoft.AspNetCore.Builder;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,18 +21,10 @@ builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
     options.Password.RequiredLength = 6;
     options.Password.RequireNonAlphanumeric = false;
     options.Password.RequireUppercase = false;
-    options.SignIn.RequireConfirmedAccount = false; // Deshabilitar confirmación de cuenta
+    options.SignIn.RequireConfirmedAccount = false;
 })
 .AddEntityFrameworkStores<AppDbContext>()
 .AddDefaultTokenProviders();
-
-// Configuración de cookies
-builder.Services.ConfigureApplicationCookie(options =>
-{
-    options.LoginPath = "/Identity/Account/Login"; // Ruta para la página de login
-    options.LogoutPath = "/Identity/Account/Logout"; // Ruta para la página de logout
-    options.AccessDeniedPath = "/Identity/Account/AccessDenied"; // Ruta para acceso denegado
-});
 
 var app = builder.Build();
 
@@ -40,15 +34,27 @@ if (!app.Environment.IsDevelopment())
     app.UseExceptionHandler("/Error");
     app.UseHsts();
 }
-else
+
+// Crear directorio uploads si no existe
+var uploadsPath = Path.Combine(app.Environment.WebRootPath, "uploads");
+if (!Directory.Exists(uploadsPath))
 {
-    app.UseDeveloperExceptionPage();
-    app.UseMigrationsEndPoint();
+    Directory.CreateDirectory(uploadsPath);
 }
 
-app.UseHttpsRedirection();
-app.UseStaticFiles();
+// Configuración de archivos estáticos para uploads
+app.UseStaticFiles(new StaticFileOptions
+{
+    FileProvider = new PhysicalFileProvider(uploadsPath),
+    RequestPath = "/uploads",
+    OnPrepareResponse = ctx =>
+    {
+        ctx.Context.Response.Headers.Append("Cache-Control", "public,max-age=600");
+    }
+});
 
+app.UseHttpsRedirection();
+app.UseStaticFiles(); // Para otros archivos estáticos (css, js, etc.)
 app.UseRouting();
 
 app.UseAuthentication();

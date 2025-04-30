@@ -1,0 +1,78 @@
+@page
+@model beMahou.Pages.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Publicacion</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Publicacion.Id" />
+            <div class="form-group">
+                <span class="text-danger">*</span>
+                <label asp-for="Publicacion.Usuario" class="control-label"></label>
+                <input asp-for="Publicacion.Usuario" class="form-control" />
+                <span asp-validation-for="Publicacion.Usuario" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <span class="text-danger">*</span>
+                <label asp-for="Publicacion.Bar" class="control-label"></label>
+                <input asp-for="Publicacion.Bar" class="form-control" />
+                <span asp-validation-for="Publicacion.Bar" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <span class="text-danger">*</span>
+                <label asp-for="Publicacion.Experiencia" class="control-label"></label>
+                <input asp-for="Publicacion.Experiencia" class="form-control" />
+                <span asp-validation-for="Publicacion.Experiencia" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                
+                <label asp-for="Publicacion.Fecha" class="control-label"></label>
+                <input asp-for="Publicacion.Fecha" class="form-control" />
+                <span asp-validation-for="Publicacion.Fecha" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                
+                <label asp-for="Publicacion.Estrellas" class="control-label"></label>
+                <input asp-for="Publicacion.Estrellas" class="form-control" />
+                <span asp-validation-for="Publicacion.Estrellas" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                
+                <label asp-for="Publicacion.FotoPath" class="control-label"></label>
+                <input asp-for="Publicacion.FotoPath" class="form-control" />
+                <span asp-validation-for="Publicacion.FotoPath" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <span class="text-danger">*</span>
+                <label asp-for="Publicacion.Evento" class="control-label"></label>
+                <select asp-for="Publicacion.Evento" class="form-control"></select>
+                <span asp-validation-for="Publicacion.Evento" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                
+                <label asp-for="Publicacion.UsuarioId" class="control-label"></label>
+                <input asp-for="Publicacion.UsuarioId" class="form-control" />
+                <span asp-validation-for="Publicacion.UsuarioId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

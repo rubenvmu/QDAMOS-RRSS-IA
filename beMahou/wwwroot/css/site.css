@@ -186,3 +186,33 @@
       max-width: 100%;
   }
 }
+
+/* En tu site.css o en un style tag */
+.file-input-container {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.file-input-button {
+  border: 2px dashed #ccc;
+  padding: 6rem 3rem;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.file-input-button:hover {
+  background-color: #f8f9fa;
+}
+
+.file-input-container input[type="file"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}

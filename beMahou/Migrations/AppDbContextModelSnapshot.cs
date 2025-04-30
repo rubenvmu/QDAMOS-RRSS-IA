@@ -17,41 +17,6 @@ namespace beMahou.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "9.0.4");
 
-            modelBuilder.Entity("Comentario", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
-                    b.Property<DateTime>("Fecha")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("TEXT")
-                        .HasDefaultValueSql("CURRENT_TIMESTAMP");
-
-                    b.Property<int>("PublicacionId")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int?>("PublicacionId1")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("Texto")
-                        .IsRequired()
-                        .HasMaxLength(300)
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Usuario")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("PublicacionId");
-
-                    b.HasIndex("PublicacionId1");
-
-                    b.ToTable("Comentarios");
-                });
-
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
                     b.Property<string>("Id")
@@ -191,11 +156,9 @@ namespace beMahou.Migrations
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
                     b.Property<string>("LoginProvider")
-                        .HasMaxLength(128)
                         .HasColumnType("TEXT");
 
                     b.Property<string>("ProviderKey")
-                        .HasMaxLength(128)
                         .HasColumnType("TEXT");
 
                     b.Property<string>("ProviderDisplayName")
@@ -233,11 +196,9 @@ namespace beMahou.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("LoginProvider")
-                        .HasMaxLength(128)
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Name")
-                        .HasMaxLength(128)
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Value")
@@ -248,7 +209,55 @@ namespace beMahou.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("Publicacion", b =>
+            modelBuilder.Entity("beMahou.Models.Comentario", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("EsUtil")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER")
+                        .HasDefaultValue(false);
+
+                    b.Property<DateTime>("Fecha")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("TEXT")
+                        .HasDefaultValueSql("CURRENT_TIMESTAMP");
+
+                    b.Property<int>("PublicacionId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("PublicacionId1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Texto")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Usuario")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("UsuarioId")
+                        .IsRequired()
+                        .HasMaxLength(450)
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PublicacionId");
+
+                    b.HasIndex("PublicacionId1");
+
+                    b.HasIndex("UsuarioId");
+
+                    b.ToTable("Comentarios");
+                });
+
+            modelBuilder.Entity("beMahou.Models.Publicacion", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -259,17 +268,20 @@ namespace beMahou.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("Categoria")
-                        .HasColumnType("INTEGER");
-
                     b.Property<int>("Estrellas")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER")
-                        .HasDefaultValue(0);
+                        .HasDefaultValue(0)
+                        .HasComment("Puntos acumulables (antes llamado estrellas)");
+
+                    b.Property<string>("Evento")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("Experiencia")
                         .IsRequired()
-                        .HasMaxLength(500)
+                        .HasMaxLength(1000)
                         .HasColumnType("TEXT");
 
                     b.Property<DateTime>("Fecha")
@@ -277,14 +289,17 @@ namespace beMahou.Migrations
                         .HasColumnType("TEXT")
                         .HasDefaultValueSql("CURRENT_TIMESTAMP");
 
-                    b.Property<string>("FotoUrl")
+                    b.Property<string>("FotoPath")
+                        .HasMaxLength(255)
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Usuario")
                         .IsRequired()
+                        .HasMaxLength(100)
                         .HasColumnType("TEXT");
 
                     b.Property<string>("UsuarioId")
+                        .HasMaxLength(450)
                         .HasColumnType("TEXT");
 
                     b.Property<string>("UsuarioMahouId")
@@ -292,44 +307,50 @@ namespace beMahou.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("Estrellas");
+
+                    b.HasIndex("Evento");
+
+                    b.HasIndex("Fecha");
+
+                    b.HasIndex("UsuarioId");
+
                     b.HasIndex("UsuarioMahouId");
 
                     b.ToTable("Publicaciones");
                 });
 
-            modelBuilder.Entity("UsuarioMahou", b =>
+            modelBuilder.Entity("beMahou.Models.UsuarioMahou", b =>
                 {
                     b.Property<string>("Id")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("AvatarPath")
+                        .HasMaxLength(255)
                         .HasColumnType("TEXT");
 
                     b.Property<int>("EstrellasAcumuladas")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER")
-                        .HasDefaultValue(0);
+                        .HasDefaultValue(0)
+                        .HasComment("Puntos totales acumulados por el usuario");
 
                     b.Property<string>("Nombre")
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("UsuarioId")
+                        .IsRequired()
+                        .HasMaxLength(450)
+                        .HasColumnType("TEXT");
+
                     b.HasKey("Id");
 
+                    b.HasIndex("UsuarioId")
+                        .IsUnique();
+
                     b.ToTable("Usuarios");
-                });
-
-            modelBuilder.Entity("Comentario", b =>
-                {
-                    b.HasOne("Publicacion", null)
-                        .WithMany("Comentarios")
-                        .HasForeignKey("PublicacionId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Publicacion", "Publicacion")
-                        .WithMany()
-                        .HasForeignKey("PublicacionId1");
-
-                    b.Navigation("Publicacion");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -383,19 +404,43 @@ namespace beMahou.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("Publicacion", b =>
+            modelBuilder.Entity("beMahou.Models.Comentario", b =>
                 {
-                    b.HasOne("UsuarioMahou", null)
+                    b.HasOne("beMahou.Models.Publicacion", null)
+                        .WithMany("Comentarios")
+                        .HasForeignKey("PublicacionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("beMahou.Models.Publicacion", "Publicacion")
+                        .WithMany()
+                        .HasForeignKey("PublicacionId1");
+
+                    b.Navigation("Publicacion");
+                });
+
+            modelBuilder.Entity("beMahou.Models.Publicacion", b =>
+                {
+                    b.HasOne("beMahou.Models.UsuarioMahou", null)
                         .WithMany("Publicaciones")
                         .HasForeignKey("UsuarioMahouId");
                 });
 
-            modelBuilder.Entity("Publicacion", b =>
+            modelBuilder.Entity("beMahou.Models.UsuarioMahou", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
+                        .WithOne()
+                        .HasForeignKey("beMahou.Models.UsuarioMahou", "UsuarioId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("beMahou.Models.Publicacion", b =>
                 {
                     b.Navigation("Comentarios");
                 });
 
-            modelBuilder.Entity("UsuarioMahou", b =>
+            modelBuilder.Entity("beMahou.Models.UsuarioMahou", b =>
                 {
                     b.Navigation("Publicaciones");
                 });

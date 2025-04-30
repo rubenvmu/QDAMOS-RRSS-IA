@@ -1,22 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using beMahou.Data;
+using beMahou.Models;
 
-public class IndexModel : PageModel
+namespace beMahou.Pages
 {
-    private readonly AppDbContext _context;
-
-    public IndexModel(AppDbContext context)
+    public class IndexModel : PageModel
     {
-        _context = context;
-    }
+        private readonly AppDbContext _context;
 
-    public List<Publicacion> Publicaciones { get; set; } = new();
+        public IndexModel(AppDbContext context)
+        {
+            _context = context;
+        }
 
-    public async Task OnGetAsync()
-    {
-        Publicaciones = await _context.Publicaciones
-            .OrderByDescending(p => p.Fecha)
-            .ToListAsync();
+        public IList<Publicacion> Publicaciones { get; set; } = new List<Publicacion>();
+
+        public async Task OnGetAsync()
+        {
+            Publicaciones = await _context.Publicaciones
+                .Include(p => p.Comentarios) // Incluir comentarios si los necesitas
+                .OrderByDescending(p => p.Fecha)
+                .ToListAsync();
+        }
     }
 }

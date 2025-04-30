@@ -1,0 +1,117 @@
+@page
+@model beMahou.Pages.CreateModel
+@using beMahou.Models
+
+@{
+    ViewData["Title"] = "Crear Nueva Publicación";
+}
+
+<h1 class="mb-4">@ViewData["Title"]</h1>
+
+<div class="row">
+    <div class="col-md-8">
+        <form method="post" enctype="multipart/form-data" class="needs-validation" novalidate>
+            <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+            
+            <!-- Campo oculto para UsuarioId -->
+            <input type="hidden" asp-for="Publicacion.UsuarioId" />
+            
+            <div class="form-group mb-3">
+                <label asp-for="Publicacion.Usuario" class="form-label">
+                    <span class="text-danger">*</span> Nombre de Usuario
+                </label>
+                <input asp-for="Publicacion.Usuario" class="form-control" placeholder="Tu nombre de usuario" />
+                <span asp-validation-for="Publicacion.Usuario" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group mb-3">
+                <label asp-for="Publicacion.Bar" class="form-label">
+                    <span class="text-danger">*</span> Establecimiento
+                </label>
+                <input asp-for="Publicacion.Bar" class="form-control" placeholder="Nombre del bar, pub o evento" />
+                <span asp-validation-for="Publicacion.Bar" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group mb-3">
+                <label asp-for="Publicacion.Evento" class="form-label">
+                    <span class="text-danger">*</span> Tipo de Evento
+                </label>
+                <select asp-for="Publicacion.Evento" asp-items="Html.GetEnumSelectList<TipoEvento>()" 
+                        class="form-select" required>
+                    <option value="">-- Selecciona un tipo de evento --</option>
+                </select>
+                <span asp-validation-for="Publicacion.Evento" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group mb-3">
+                <label asp-for="Publicacion.Experiencia" class="form-label">
+                    <span class="text-danger">*</span> Tu Experiencia
+                </label>
+                <textarea asp-for="Publicacion.Experiencia" class="form-control" rows="5" 
+                          placeholder="Describe tu experiencia con la cerveza Mahou..."></textarea>
+                <span asp-validation-for="Publicacion.Experiencia" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group mb-4">
+                <label asp-for="Publicacion.ImagenFile" class="form-label">
+                    Subir Foto (Opcional)
+                </label>
+                <div class="file-input-container">
+                    <div class="file-input-button border rounded p-4 text-center">
+                        <i class="bi bi-camera fs-1"></i>
+                        <p class="mt-2 mb-1">Arrastra tu foto aquí o haz clic para seleccionar</p>
+                        <small class="text-muted">Formatos: JPG, PNG (Máx. 20MB)</small>
+                    </div>
+                    <input asp-for="Publicacion.ImagenFile" type="file" class="form-control" accept="image/*" />
+                </div>
+                <span asp-validation-for="Publicacion.ImagenFile" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary me-2">
+                    <i class="bi bi-save"></i> Crear Publicación
+                </button>
+                <a asp-page="Index" class="btn btn-outline-secondary">Cancelar</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Styles {
+    <style>
+        .file-input-container {
+            position: relative;
+            overflow: hidden;
+        }
+        .file-input-button {
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .file-input-button:hover {
+            background-color: #f8f9fa;
+        }
+        .file-input-container input[type="file"] {
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+        }
+    </style>
+}
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    
+    <script>
+        // Actualizar el texto del botón cuando se selecciona un archivo
+        document.querySelector('input[type="file"]').addEventListener('change', function(e) {
+            if (this.files.length > 0) {
+                const fileName = this.files[0].name;
+                document.querySelector('.file-input-button p').textContent = fileName;
+            }
+        });
+    </script>
+}

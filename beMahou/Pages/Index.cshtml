@@ -1,87 +1,135 @@
-﻿@page
-@model IndexModel
+@page
+@model beMahou.Pages.IndexModel
+@using beMahou.Models
 @{
-    ViewData["Title"] = "Inicio";
+    ViewData["Title"] = "Publicaciones";
 }
 
-<div class="be-mahou-feed-container">
-    @if (Model.Publicaciones.Any())
-    {
-        @foreach (var pub in Model.Publicaciones)
-        {
-            <div class="be-mahou-post-card">
-                <!-- Cabecera del post -->
-                <div class="be-mahou-post-header">
-                    <div class="be-mahou-post-user">
-                        <div class="be-mahou-user-avatar">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div class="be-mahou-user-info">
-                            <span class="be-mahou-username">@pub.Usuario</span>
-                            <span class="be-mahou-location">
-                                <i class="fas fa-map-marker-alt"></i> @pub.Bar
-                            </span>
-                        </div>
-                    </div>
-                    <span class="be-mahou-post-category @pub.Categoria.ToString().ToLower()">
-                        @pub.Categoria
-                    </span>
-                </div>
-
-                <!-- Contenido del post -->
-                <div class="be-mahou-post-content">
-                    <p class="be-mahou-post-text">@pub.Experiencia</p>
-                    
-                    @if (!string.IsNullOrEmpty(pub.FotoUrl))
-                    {
-                        <div class="be-mahou-post-image-wrapper">
-                            <img src="@pub.FotoUrl" class="be-mahou-post-image" alt="Imagen de @pub.Bar">
-                        </div>
-                    }
-                </div>
-
-                <!-- Acciones del post -->
-                <div class="be-mahou-post-actions">
-                    <div class="be-mahou-action-buttons">
-                        <button class="be-mahou-action-btn be-mahou-like-btn" data-id="@pub.Id">
-                            <i class="far fa-star"></i>
-                            <span class="be-mahou-like-count">@pub.Estrellas</span>
-                        </button>
-                        <button class="be-mahou-action-btn be-mahou-comment-btn">
-                            <i class="far fa-comment"></i>
-                            <span class="be-mahou-comment-count">0</span>
-                        </button>
-                        <button class="be-mahou-action-btn be-mahou-share-btn">
-                            <i class="fas fa-share"></i>
-                        </button>
-                    </div>
-                    <div class="be-mahou-post-date">
-                        <i class="far fa-clock"></i>
-                        <span>@pub.Fecha.ToString("g")</span>
-                    </div>
-                </div>
-            </div>
-        }
-    }
-    else
-    {
-        <div class="be-mahou-empty-feed">
-            <div class="be-mahou-empty-content">
-                <i class="fas fa-beer be-mahou-empty-icon"></i>
-                <h3 class="be-mahou-empty-title">¡No hay publicaciones aún!</h3>
-                <p class="be-mahou-empty-text">Sé el primero en compartir tu experiencia Mahou</p>
-                <a asp-page="/NuevaPublicacion" class="btn btn-danger be-mahou-empty-btn">
-                    <i class="fas fa-plus me-2"></i>Crear publicación
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+            <!-- Botón para crear nueva publicación -->
+            <div class="d-flex justify-content-end mb-4">
+                <a asp-page="Create" class="btn btn-primary">
+                    <i class="bi bi-plus-circle"></i> Nueva Publicación
                 </a>
             </div>
+
+            <!-- Listado de publicaciones -->
+            @foreach (var item in Model.Publicaciones)
+            {
+                <div class="card mb-4">
+                    <!-- Cabecera de la publicación -->
+                    <div class="card-header bg-white d-flex align-items-center">
+                        <div class="flex-grow-1">
+                            <h6 class="mb-0 fw-bold">@item.Usuario</h6>
+                            <small class="text-muted">@item.Bar - @item.Fecha.ToString("dd MMM yyyy")</small>
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn btn-sm" type="button" data-bs-toggle="dropdown">
+                                <i class="bi bi-three-dots"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" asp-page="./Edit" asp-route-id="@item.Id">Editar</a></li>
+                                <li><a class="dropdown-item" asp-page="./Details" asp-route-id="@item.Id">Detalles</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item text-danger" asp-page="./Delete" asp-route-id="@item.Id">Eliminar</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Imagen de la publicación -->
+                    @if (!string.IsNullOrEmpty(item.FotoPath))
+                    {
+                        <img src="@item.FotoPath" class="card-img-top" alt="Publicación de @item.Usuario" style="object-fit: cover; height: 500px;">
+                    }
+                    else
+                    {
+                        <div class="no-image-placeholder d-flex align-items-center justify-content-center" style="height: 500px; background-color: #f8f9fa;">
+                            <i class="bi bi-image text-muted fs-1"></i>
+                        </div>
+                    }
+
+                    <!-- Acciones (Estrellas/Likes) -->
+                    <div class="card-body py-2">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <button class="btn btn-sm p-0 me-2">
+                                    <i class="bi bi-star-fill text-warning fs-5"></i>
+                                </button>
+                                <span class="fw-bold">@item.Estrellas ★</span>
+                            </div>
+                            <small class="text-muted">@item.Evento</small>
+                        </div>
+                    </div>
+
+                    <!-- Descripción/Experiencia -->
+                    <div class="card-body pt-0">
+                        <p class="card-text">@item.Experiencia</p>
+                    </div>
+
+                    <!-- Comentarios -->
+                    <div class="card-body border-top">
+                        <div class="mb-2">
+                            @if (item.Comentarios != null && item.Comentarios.Any())
+                            {
+                                <div class="mb-2">
+                                    @foreach (var comentario in item.Comentarios.Take(2))
+                                    {
+                                        <div class="mb-1">
+                                            <span class="fw-bold">@comentario.Usuario:</span>
+                                            <span>@comentario.Texto</span>
+                                        </div>
+                                    }
+                                    @if (item.Comentarios.Count > 2)
+                                    {
+                                        <small class="text-muted">Ver los @(item.Comentarios.Count - 2) comentarios restantes</small>
+                                    }
+                                </div>
+                            }
+                            else
+                            {
+                                <small class="text-muted">No hay comentarios aún</small>
+                            }
+                        </div>
+                        
+                        <!-- Formulario para añadir comentario -->
+                        <form method="post" asp-page-handler="AddComment" asp-route-publicacionId="@item.Id">
+                            <div class="input-group">
+                                <input type="text" name="comentarioTexto" class="form-control" placeholder="Añade un comentario...">
+                                <button class="btn btn-outline-secondary" type="submit">Publicar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            }
         </div>
-    }
+    </div>
 </div>
 
 @section Styles {
-    <link rel="stylesheet" href="/css/site.css" asp-append-version="true" />
+    <style>
+        .no-image-placeholder {
+            color: #adb5bd;
+        }
+        .card {
+            border-radius: 8px;
+            border: 1px solid #eaeaea;
+        }
+        .card-header {
+            border-bottom: 1px solid #eaeaea;
+        }
+    </style>
 }
 
 @section Scripts {
-    <script src="/js/feed.js" asp-append-version="true"></script>
+    <script>
+        // Script para manejar el sistema de estrellas/likes
+        document.querySelectorAll('.bi-star-fill').forEach(star => {
+            star.addEventListener('click', function() {
+                this.classList.toggle('text-warning');
+                this.classList.toggle('text-secondary');
+            });
+        });
+    </script>
 }
