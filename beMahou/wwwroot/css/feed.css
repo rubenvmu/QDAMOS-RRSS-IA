@@ -1,0 +1,224 @@
+/* Variables de diseño */
+:root {
+    --be-mahou-red: #c8102e;
+    --be-mahou-dark-red: #a50d26;
+    --be-mahou-light-gray: #f8f9fa;
+    --be-mahou-card-bg: #ffffff;
+    --be-mahou-text-dark: #212529;
+    --be-mahou-text-light: #6c757d;
+    --be-mahou-border-color: #e9ecef;
+    --be-mahou-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    --be-mahou-transition: all 0.3s ease;
+}
+
+/* Contenedor del feed */
+.be-mahou-feed-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 0 20px;
+}
+
+/* Tarjeta de post */
+.be-mahou-post-card {
+    background-color: var(--be-mahou-card-bg);
+    border-radius: 12px;
+    box-shadow: var(--be-mahou-shadow);
+    overflow: hidden;
+    margin-bottom: 24px;
+    transition: var(--be-mahou-transition);
+}
+
+.be-mahou-post-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+/* Cabecera del post */
+.be-mahou-post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+}
+
+.be-mahou-post-user {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.be-mahou-user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--be-mahou-light-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--be-mahou-text-light);
+}
+
+.be-mahou-user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.be-mahou-username {
+    font-weight: 600;
+    color: var(--be-mahou-text-dark);
+}
+
+.be-mahou-location {
+    font-size: 0.8rem;
+    color: var(--be-mahou-text-light);
+}
+
+.be-mahou-location i {
+    color: var(--be-mahou-red);
+    margin-right: 4px;
+}
+
+.be-mahou-post-category {
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: white;
+    text-transform: capitalize;
+}
+
+/* Colores de categorías */
+.be-mahou-post-category.bar { background-color: #2e7d32; }
+.be-mahou-post-category.restaurante { background-color: #1565c0; }
+.be-mahou-post-category.cafeteria { background-color: #6a1b9a; }
+.be-mahou-post-category.pub { background-color: #ef6c00; }
+.be-mahou-post-category.discoteca { background-color: #37474f; }
+.be-mahou-post-category.otro { background-color: var(--be-mahou-red); }
+
+/* Contenido del post */
+.be-mahou-post-content {
+    padding: 0 16px 12px;
+}
+
+.be-mahou-post-text {
+    margin-bottom: 12px;
+    line-height: 1.5;
+    color: var(--be-mahou-text-dark);
+}
+
+.be-mahou-post-image-wrapper {
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+.be-mahou-post-image {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Acciones del post */
+.be-mahou-post-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    border-top: 1px solid var(--be-mahou-border-color);
+}
+
+.be-mahou-action-buttons {
+    display: flex;
+    gap: 16px;
+}
+
+.be-mahou-action-btn {
+    background: none;
+    border: none;
+    color: var(--be-mahou-text-dark);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: var(--be-mahou-transition);
+}
+
+.be-mahou-action-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.be-mahou-action-btn i {
+    font-size: 1.1rem;
+}
+
+.be-mahou-like-btn.active {
+    color: #ffc107;
+}
+
+.be-mahou-like-btn.active i {
+    font-weight: 900;
+}
+
+.be-mahou-post-date {
+    font-size: 0.8rem;
+    color: var(--be-mahou-text-light);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+/* Estado vacío */
+.be-mahou-empty-feed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    text-align: center;
+}
+
+.be-mahou-empty-content {
+    max-width: 400px;
+    padding: 20px;
+}
+
+.be-mahou-empty-icon {
+    font-size: 4rem;
+    color: var(--be-mahou-red);
+    margin-bottom: 20px;
+}
+
+.be-mahou-empty-title {
+    color: var(--be-mahou-red);
+    margin-bottom: 10px;
+}
+
+.be-mahou-empty-text {
+    color: var(--be-mahou-text-light);
+    margin-bottom: 20px;
+}
+
+.be-mahou-empty-btn {
+    padding: 8px 24px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 767.98px) {
+    .be-mahou-post-card {
+        border-radius: 0;
+        margin-bottom: 16px;
+        box-shadow: none;
+        border-bottom: 1px solid var(--be-mahou-border-color);
+    }
+    
+    .be-mahou-post-image {
+        max-height: 100vw;
+    }
+    
+    .be-mahou-empty-feed {
+        min-height: 50vh;
+    }
+}

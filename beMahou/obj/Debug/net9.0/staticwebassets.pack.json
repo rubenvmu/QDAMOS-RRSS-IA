@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets/beMahou.dzgp7dmqpf.bundle.scp.css"
     },
     {
+      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/css/feed.css",
+      "PackagePath": "staticwebassets/css/feed.css"
+    },
+    {
       "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },
@@ -13,8 +17,8 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/js/mobile.js",
-      "PackagePath": "staticwebassets/js/mobile.js"
+      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/js/feed.js",
+      "PackagePath": "staticwebassets/js/feed.js"
     },
     {
       "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/js/site.js",

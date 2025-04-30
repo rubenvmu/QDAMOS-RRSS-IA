@@ -1,201 +1,87 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "beMahou";
+    ViewData["Title"] = "Inicio";
 }
 
-<!-- Elimina el mahou-container y usa directamente el contenedor de Bootstrap -->
-<div class="container px-0" style="max-width: 600px;">
-    <!-- Header con sticky-top de Bootstrap -->
-    <div class="mahou-header sticky-top bg-white px-3 py-2 border-bottom">
-        <div class="d-flex justify-content-between align-items-center">
-            <h1 class="mahou-title m-0">
-                <i class="fas fa-beer"></i> @ViewData["Title"]
-            </h1>
-            <a asp-page="/NuevaPublicacion" class="btn btn-danger btn-sm rounded-pill">
-                <i class="fas fa-plus"></i> Nueva
-            </a>
-        </div>
-    </div>
-
-    <!-- Feed de publicaciones -->
-    <div class="mahou-posts-feed px-3">
-        @if (Model.Publicaciones.Any())
+<div class="be-mahou-feed-container">
+    @if (Model.Publicaciones.Any())
+    {
+        @foreach (var pub in Model.Publicaciones)
         {
-            @foreach (var pub in Model.Publicaciones)
-            {
-                <div class="mahou-post mb-4">
-                    <!-- Cabecera del post -->
-                    <div class="mahou-post-header d-flex justify-content-between align-items-center px-3 py-2">
-                        <div class="d-flex align-items-center">
-                            <div class="mahou-avatar me-2">
-                                <i class="fas fa-user"></i>
-                            </div>
-                            <div>
-                                <div class="mahou-username fw-bold">@pub.Usuario</div>
-                                <div class="mahou-post-bar small">
-                                    <i class="fas fa-map-marker-alt text-danger"></i> @pub.Bar
-                                </div>
-                            </div>
+            <div class="be-mahou-post-card">
+                <!-- Cabecera del post -->
+                <div class="be-mahou-post-header">
+                    <div class="be-mahou-post-user">
+                        <div class="be-mahou-user-avatar">
+                            <i class="fas fa-user"></i>
                         </div>
-                        <span class="mahou-post-category @pub.Categoria.ToString().ToLower()">
-                            @pub.Categoria
-                        </span>
-                    </div>
-
-                    <!-- Contenido del post -->
-                    <div class="mahou-post-content">
-                        <p class="mahou-post-text px-3 py-2">@pub.Experiencia</p>
-                        
-                        @if (!string.IsNullOrEmpty(pub.FotoUrl))
-                        {
-                            <div class="mahou-post-image-container">
-                                <img src="@pub.FotoUrl" class="mahou-post-image w-100" alt="Imagen del bar @pub.Bar">
-                            </div>
-                        }
-                    </div>
-
-                    <!-- Pie del post -->
-                    <div class="mahou-post-footer px-3 py-2 border-top">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="mahou-post-actions d-flex gap-3">
-                                <button class="mahou-action-btn mahou-star-btn" data-id="@pub.Id">
-                                    <i class="far fa-star"></i> <span class="mahou-star-count">@pub.Estrellas</span>
-                                </button>
-                                <button class="mahou-action-btn mahou-comment-btn">
-                                    <i class="far fa-comment"></i> Comentar
-                                </button>
-                                <button class="mahou-action-btn mahou-share-btn">
-                                    <i class="fas fa-share"></i> Compartir
-                                </button>
-                            </div>
-                            <div class="mahou-post-date small text-muted">
-                                <i class="far fa-clock"></i> @pub.Fecha.ToString("g")
-                            </div>
+                        <div class="be-mahou-user-info">
+                            <span class="be-mahou-username">@pub.Usuario</span>
+                            <span class="be-mahou-location">
+                                <i class="fas fa-map-marker-alt"></i> @pub.Bar
+                            </span>
                         </div>
+                    </div>
+                    <span class="be-mahou-post-category @pub.Categoria.ToString().ToLower()">
+                        @pub.Categoria
+                    </span>
+                </div>
+
+                <!-- Contenido del post -->
+                <div class="be-mahou-post-content">
+                    <p class="be-mahou-post-text">@pub.Experiencia</p>
+                    
+                    @if (!string.IsNullOrEmpty(pub.FotoUrl))
+                    {
+                        <div class="be-mahou-post-image-wrapper">
+                            <img src="@pub.FotoUrl" class="be-mahou-post-image" alt="Imagen de @pub.Bar">
+                        </div>
+                    }
+                </div>
+
+                <!-- Acciones del post -->
+                <div class="be-mahou-post-actions">
+                    <div class="be-mahou-action-buttons">
+                        <button class="be-mahou-action-btn be-mahou-like-btn" data-id="@pub.Id">
+                            <i class="far fa-star"></i>
+                            <span class="be-mahou-like-count">@pub.Estrellas</span>
+                        </button>
+                        <button class="be-mahou-action-btn be-mahou-comment-btn">
+                            <i class="far fa-comment"></i>
+                            <span class="be-mahou-comment-count">0</span>
+                        </button>
+                        <button class="be-mahou-action-btn be-mahou-share-btn">
+                            <i class="fas fa-share"></i>
+                        </button>
+                    </div>
+                    <div class="be-mahou-post-date">
+                        <i class="far fa-clock"></i>
+                        <span>@pub.Fecha.ToString("g")</span>
                     </div>
                 </div>
-            }
-        }
-        else
-        {
-            <div class="mahou-empty-state text-center py-5">
-                <i class="fas fa-beer mahou-empty-icon"></i>
-                <h3 class="text-danger">¡No hay publicaciones aún!</h3>
-                <p class="text-muted">Sé el primero en compartir tu experiencia Mahou</p>
-                <a asp-page="/NuevaPublicacion" class="btn btn-danger rounded-pill px-4">
-                    <i class="fas fa-plus me-2"></i>Crear primera publicación
-                </a>
             </div>
         }
-    </div>
+    }
+    else
+    {
+        <div class="be-mahou-empty-feed">
+            <div class="be-mahou-empty-content">
+                <i class="fas fa-beer be-mahou-empty-icon"></i>
+                <h3 class="be-mahou-empty-title">¡No hay publicaciones aún!</h3>
+                <p class="be-mahou-empty-text">Sé el primero en compartir tu experiencia Mahou</p>
+                <a asp-page="/NuevaPublicacion" class="btn btn-danger be-mahou-empty-btn">
+                    <i class="fas fa-plus me-2"></i>Crear publicación
+                </a>
+            </div>
+        </div>
+    }
 </div>
 
 @section Styles {
-    <style>
-        /* Variables de color */
-        :root {
-            --mahou-red: #c8102e;
-            --mahou-dark-red: #a50d26;
-            --mahou-light-gray: #f5f5f5;
-            --mahou-gray: #e0e0e0;
-            --mahou-dark-gray: #757575;
-        }
-
-        /* Estructura principal */
-        .mahou-posts-feed {
-            padding-bottom: 80px;
-        }
-
-        /* Tarjeta de post */
-        .mahou-post {
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-        }
-
-        /* Avatar de usuario */
-        .mahou-avatar {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background-color: var(--mahou-light-gray);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--mahou-dark-gray);
-        }
-
-        /* Imagen del post */
-        .mahou-post-image {
-            max-height: 400px;
-            object-fit: cover;
-        }
-
-        /* Categorías */
-        .mahou-post-category.bar { background-color: #2e7d32; }
-        .mahou-post-category.restaurante { background-color: #1565c0; }
-        .mahou-post-category.cafeteria { background-color: #6a1b9a; }
-        .mahou-post-category.pub { background-color: #ef6c00; }
-        .mahou-post-category.discoteca { background-color: #37474f; }
-        .mahou-post-category.otro { background-color: #c8102e; }
-
-        /* Botones de acción */
-        .mahou-action-btn {
-            transition: all 0.2s;
-        }
-        
-        .mahou-action-btn:hover {
-            transform: scale(1.1);
-        }
-        
-        .mahou-star-btn.active {
-            color: #ffc107;
-        }
-
-        /* Responsive */
-        @@media (max-width: 768px) {
-            .mahou-post-image {
-                max-height: 100vw;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="/css/site.css" asp-append-version="true" />
 }
 
 @section Scripts {
-    <script>
-        // Funcionalidad de estrellas
-        document.querySelectorAll('.mahou-star-btn').forEach(btn => {
-            btn.addEventListener('click', async function() {
-                const pubId = this.getAttribute('data-id');
-                const icon = this.querySelector('i');
-                const count = this.querySelector('.mahou-star-count');
-                
-                try {
-                    const response = await fetch(`/NuevaPublicacion?handler=IncrementarEstrella&id=${pubId}`, {
-                        method: 'POST',
-                        headers: {
-                            'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]').value
-                        }
-                    });
-                    
-                    if (response.ok) {
-                        const data = await response.json();
-                        count.textContent = data.estrellas;
-                        icon.classList.replace('far', 'fas');
-                        this.classList.add('active');
-                        
-                        // Animación
-                        this.style.transform = 'scale(1.2)';
-                        setTimeout(() => {
-                            this.style.transform = '';
-                        }, 200);
-                    }
-                } catch (error) {
-                    console.error('Error al dar estrella:', error);
-                }
-            });
-        });
-    </script>
+    <script src="/js/feed.js" asp-append-version="true"></script>
 }

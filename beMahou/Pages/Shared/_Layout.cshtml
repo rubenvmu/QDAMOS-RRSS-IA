@@ -2,142 +2,102 @@
 <html lang="es">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Mahou Experiences</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>@ViewData["Title"] - beMahou</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/mobile.css" asp-append-version="true" id="mobile-css" disabled />
-    <link rel="stylesheet" href="~/beMahou.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    
     @RenderSection("Styles", required: false)
-
-    <style>
-        /* Ocultar el botón flotante en modo móvil */
-        @@media (max-width: 768px) {
-            .create-post-button {
-                display: none;
-            }
-        }
-
-        /* Mostrar el navbar inferior solo en modo móvil */
-        @@media (max-width: 768px) {
-            #mahou-footer {
-                display: flex;
-            }
-        }
-    </style>
 </head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3 d-none d-md-flex">
-            <div class="container-fluid">
-                <!-- Título grande "beMahou" -->
-                <a class="navbar-brand fw-bold text-uppercase fs-3 text-dark" href="/Index">beMahou</a>
-                
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <!-- Categorías -->
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark fw-bold text-uppercase fs-5" asp-page="/NuevaPublicacion">Conciertos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark fw-bold text-uppercase fs-5" asp-page="/Categoria/Quedadas">Quedadas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark fw-bold text-uppercase fs-5" asp-page="/Categoria/Sorteos">Sorteos</a>
-                        </li>
-                    </ul>
-
-                    <!-- Contador de estrellas y Login -->
-                    <div class="d-flex align-items-center">
-                        <div class="me-3 d-flex align-items-center">
-                            <i class="fas fa-star text-dark fs-4"></i>
-                            <span class="ms-2 text-dark fw-bold fs-5">5</span>
-                        </div>
-                        <partial name="_LoginPartial" />
-                    </div>
+<body class="be-mahou-body">
+    <!-- Navbar Desktop -->
+    <nav id="be-mahou-desktop-nav" class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-uppercase fs-3" href="/">
+                <i class="fas fa-beer me-2"></i>beMahou
+            </a>
+            
+            <div class="d-flex align-items-center gap-3">
+                <!-- Botón de cambio de vista -->
+                <div class="btn-group shadow-sm be-mahou-view-toggle">
+                    <button id="be-mahou-mobile-view" class="btn btn-outline-dark btn-sm" title="Vista móvil">
+                        <i class="fas fa-mobile-alt"></i>
+                    </button>
+                    <button id="be-mahou-desktop-view" class="btn btn-dark btn-sm" title="Vista de escritorio">
+                        <i class="fas fa-desktop"></i>
+                    </button>
                 </div>
+
+                <!-- Menú principal -->
+                <ul class="navbar-nav d-none d-lg-flex">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link fw-bold" asp-page="/NuevaPublicacion">Conciertos</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link fw-bold" asp-page="/Categoria/Quedadas">Quedadas</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link fw-bold" asp-page="/Categoria/Sorteos">Sorteos</a>
+                    </li>
+                </ul>
+
+                <!-- Contador de estrellas -->
+                <div class="be-mahou-star-counter d-flex align-items-center ms-3">
+                    <i class="fas fa-star text-warning me-1"></i>
+                    <span class="fw-bold">5</span>
+                </div>
+
+                <!-- Login -->
+                <partial name="_LoginPartial" />
             </div>
-        </nav>
-    </header>
-
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
-
-    <div class="position-fixed bottom-0 end-0 m-3">
-        <div class="btn-group shadow">
-            <button id="mobileView" class="btn btn-outline-dark" title="Vista móvil">
-                <i class="fas fa-mobile-alt"></i>
-            </button>
-            <button id="desktopView" class="btn btn-dark" title="Vista de escritorio">
-                <i class="fas fa-desktop"></i>
-            </button>
         </div>
-    </div>
+    </nav>
 
-    <!-- Botón flotante para crear publicación (solo en modo escritorio) -->
-    <div class="position-fixed bottom-0 start-50 translate-middle-x m-4 d-none d-md-block">
-        <button id="createPostButton" class="btn btn-danger btn-lg rounded-circle shadow create-post-button">
-            <i class="fas fa-plus"></i>
-        </button>
-    </div>
+    <!-- Contenido principal -->
+    <main class="be-mahou-main-content">
+        <div class="be-mahou-content-container">
+            @RenderBody()
+        </div>
+    </main>
 
-    <!-- Navbar inferior (solo en modo móvil) -->
-    <footer id="mahou-footer" class="mahou-footer d-md-none">
-        <nav id="footer-nav" class="footer-nav-container">
-            <!-- Ícono Inicio -->
-            <div id="footer-home" class="footer-nav-item text-center">
-                <a href="/Index" class="footer-nav-link">
-                    <i class="fas fa-home footer-icon"></i>
-                    <span class="footer-label">Inicio</span>
+    <!-- Navbar Mobile -->
+    <nav id="be-mahou-mobile-nav" class="navbar navbar-dark bg-danger fixed-bottom d-md-none">
+        <div class="container-fluid px-0">
+            <div class="d-flex justify-content-around w-100 align-items-center">
+                <a href="/" class="be-mahou-mobile-nav-item text-white text-center py-2">
+                    <i class="fas fa-home fa-lg d-block mb-1"></i>
+                    <span class="small">Inicio</span>
+                </a>
+                <a href="/Categoria/Festival" class="be-mahou-mobile-nav-item text-white text-center py-2">
+                    <i class="fas fa-music fa-lg d-block mb-1"></i>
+                    <span class="small">Conciertos</span>
+                </a>
+                <a href="/NuevaPublicacion" class="be-mahou-mobile-nav-item text-white text-center py-2">
+                    <div class="be-mahou-mobile-nav-center">
+                        <i class="fas fa-plus-circle fa-2x"></i>
+                    </div>
+                </a>
+                <a href="/Categoria/Quedadas" class="be-mahou-mobile-nav-item text-white text-center py-2">
+                    <i class="fas fa-users fa-lg d-block mb-1"></i>
+                    <span class="small">Quedadas</span>
+                </a>
+                <a href="/Perfil" class="be-mahou-mobile-nav-item text-white text-center py-2">
+                    <i class="fas fa-user fa-lg d-block mb-1"></i>
+                    <span class="small">Perfil</span>
                 </a>
             </div>
+        </div>
+    </nav>
 
-            <!-- Ícono Festivales -->
-            <div id="footer-festivals" class="footer-nav-item text-center">
-                <a href="/Categoria/Festival" class="footer-nav-link">
-                    <i class="fas fa-music footer-icon"></i>
-                    <span class="footer-label">Conciertos</span>
-                </a>
-            </div>
-
-            <!-- Botón Central (Crear Publicación) -->
-            <div id="footer-center-btn" class="footer-center-button text-center">
-                <a href="/NuevaPublicacion" class="footer-main-button btn btn-light rounded-circle shadow">
-                    <i class="fas fa-plus text-danger"></i>
-                </a>
-            </div>
-
-            <!-- Ícono Quedadas -->
-            <div id="footer-meetups" class="footer-nav-item text-center">
-                <a href="/Categoria/Concurso" class="footer-nav-link">
-                    <i class="fas fa-users footer-icon"></i>
-                    <span class="footer-label">Quedadas</span>
-                </a>
-            </div>
-
-            <!-- Ícono Perfil -->
-            <div id="footer-profile" class="footer-nav-item text-center">
-                <a href="/Perfil" class="footer-nav-link">
-                    <i class="fas fa-user footer-icon"></i>
-                    <span class="footer-label">Sorteos</span>
-                </a>
-            </div>
-        </nav>
-    </footer>
-
-    <!-- Botón de cambio de vista móvil/escritorio -->
-    
+    <!-- Botón flotante para desktop -->
+    <a href="/NuevaPublicacion" class="be-mahou-floating-btn btn btn-danger rounded-circle p-3 d-none d-md-flex">
+        <i class="fas fa-plus fa-lg"></i>
+    </a>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    <script src="~/js/mobile.js" asp-append-version="true"></script>
-
+    <script src="/js/feed.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
