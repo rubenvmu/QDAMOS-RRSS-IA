@@ -4,6 +4,7 @@ using beMahou.Data;
 using Microsoft.Extensions.FileProviders;
 using System.IO;
 using Microsoft.AspNetCore.Builder;
+using beMahou.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,10 +15,10 @@ builder.Services.AddRazorPages();
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// Configuración de Identity
-builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
+// Configuración de Identity con UsuarioMahou
+builder.Services.AddIdentity<UsuarioMahou, IdentityRole>(options =>
 {
-    options.Password.RequireDigit = true;
+    options.Password.RequireDigit = false;
     options.Password.RequiredLength = 6;
     options.Password.RequireNonAlphanumeric = false;
     options.Password.RequireUppercase = false;
@@ -25,6 +26,13 @@ builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
 })
 .AddEntityFrameworkStores<AppDbContext>()
 .AddDefaultTokenProviders();
+
+// Configuración de cookies
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.LoginPath = "/Identity/Account/Login";
+    options.AccessDeniedPath = "/Identity/Account/AccessDenied";
+});
 
 var app = builder.Build();
 
@@ -35,28 +43,22 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-// Crear directorio uploads si no existe
-var uploadsPath = Path.Combine(app.Environment.WebRootPath, "uploads");
-if (!Directory.Exists(uploadsPath))
+// Crear directorios necesarios
+var avatarsPath = Path.Combine(app.Environment.WebRootPath, "avatars");
+if (!Directory.Exists(avatarsPath))
 {
-    Directory.CreateDirectory(uploadsPath);
+    Directory.CreateDirectory(avatarsPath);
 }
 
-// Configuración de archivos estáticos para uploads
+app.UseHttpsRedirection();
+app.UseStaticFiles();
 app.UseStaticFiles(new StaticFileOptions
 {
-    FileProvider = new PhysicalFileProvider(uploadsPath),
-    RequestPath = "/uploads",
-    OnPrepareResponse = ctx =>
-    {
-        ctx.Context.Response.Headers.Append("Cache-Control", "public,max-age=600");
-    }
+    FileProvider = new PhysicalFileProvider(avatarsPath),
+    RequestPath = "/avatars"
 });
 
-app.UseHttpsRedirection();
-app.UseStaticFiles(); // Para otros archivos estáticos (css, js, etc.)
 app.UseRouting();
-
 app.UseAuthentication();
 app.UseAuthorization();
 

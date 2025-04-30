@@ -24,7 +24,7 @@ namespace beMahou.Migrations
                 type: "INTEGER",
                 nullable: false,
                 defaultValue: 0,
-                comment: "Puntos totales acumulados por el usuario",
+                comment: "Estrellas totales acumulados por el usuario",
                 oldClrType: typeof(int),
                 oldType: "INTEGER",
                 oldDefaultValue: 0);
@@ -189,7 +189,7 @@ namespace beMahou.Migrations
                 oldClrType: typeof(int),
                 oldType: "INTEGER",
                 oldDefaultValue: 0,
-                oldComment: "Puntos totales acumulados por el usuario");
+                oldComment: "Estrellas totales acumulados por el usuario");
 
             migrationBuilder.AlterColumn<int>(
                 name: "Estrellas",
@@ -200,7 +200,7 @@ namespace beMahou.Migrations
                 oldClrType: typeof(int),
                 oldType: "INTEGER",
                 oldDefaultValue: 0,
-                oldComment: "Puntos acumulables (antes llamado estrellas)");
+                oldComment: "Estrellas acumulables (antes llamado estrellas)");
 
             migrationBuilder.AddColumn<int>(
                 name: "Categoria",

@@ -18,7 +18,7 @@ public static class SeedData
         var context = services.GetRequiredService<AppDbContext>();
         await context.Database.EnsureCreatedAsync();
 
-        var userManager = services.GetRequiredService<UserManager<IdentityUser>>();
+        var userManager = services.GetRequiredService<UserManager<UsuarioMahou>>();
         var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
 
         // Crear roles
@@ -36,27 +36,19 @@ public static class SeedData
         var adminUser = await userManager.FindByEmailAsync(adminEmail);
         if (adminUser == null)
         {
-            adminUser = new IdentityUser
+            adminUser = new UsuarioMahou
             {
                 UserName = adminEmail,
                 Email = adminEmail,
-                EmailConfirmed = true
+                EmailConfirmed = true,
+                Nombre = "Administrador",
+                EstrellasAcumuladas = 100,
+                AvatarPath = "/images/default-avatar.png"
             };
             var result = await userManager.CreateAsync(adminUser, "Admin123!");
             if (result.Succeeded)
             {
                 await userManager.AddToRoleAsync(adminUser, "Admin");
-                
-                // Crear perfil de usuario asociado
-                context.Usuarios.Add(new UsuarioMahou
-                {
-                    Id = Guid.NewGuid().ToString(),
-                    Nombre = "Administrador",
-                    UsuarioId = adminUser.Id,
-                    EstrellasAcumuladas = 100,
-                    AvatarPath = "/images/default-avatar.png"
-                });
-                await context.SaveChangesAsync();
             }
         }
 
@@ -65,26 +57,19 @@ public static class SeedData
         var premiumUser = await userManager.FindByEmailAsync(premiumEmail);
         if (premiumUser == null)
         {
-            premiumUser = new IdentityUser
+            premiumUser = new UsuarioMahou
             {
                 UserName = premiumEmail,
                 Email = premiumEmail,
-                EmailConfirmed = true
+                EmailConfirmed = true,
+                Nombre = "Usuario Premium",
+                EstrellasAcumuladas = 50,
+                AvatarPath = "/images/premium-avatar.png"
             };
             var result = await userManager.CreateAsync(premiumUser, "Premium123!");
             if (result.Succeeded)
             {
                 await userManager.AddToRoleAsync(premiumUser, "PremiumUser");
-                
-                context.Usuarios.Add(new UsuarioMahou
-                {
-                    Id = Guid.NewGuid().ToString(),
-                    Nombre = "Usuario Premium",
-                    UsuarioId = premiumUser.Id,
-                    EstrellasAcumuladas = 50,
-                    AvatarPath = "/images/premium-avatar.png"
-                });
-                await context.SaveChangesAsync();
             }
         }
 
@@ -93,26 +78,19 @@ public static class SeedData
         var normalUser = await userManager.FindByEmailAsync(userEmail);
         if (normalUser == null)
         {
-            normalUser = new IdentityUser
+            normalUser = new UsuarioMahou
             {
                 UserName = userEmail,
                 Email = userEmail,
-                EmailConfirmed = true
+                EmailConfirmed = true,
+                Nombre = "Usuario Normal",
+                EstrellasAcumuladas = 10,
+                AvatarPath = "/images/user-avatar.png"
             };
             var result = await userManager.CreateAsync(normalUser, "User123!");
             if (result.Succeeded)
             {
                 await userManager.AddToRoleAsync(normalUser, "User");
-                
-                context.Usuarios.Add(new UsuarioMahou
-                {
-                    Id = Guid.NewGuid().ToString(),
-                    Nombre = "Usuario Normal",
-                    UsuarioId = normalUser.Id,
-                    EstrellasAcumuladas = 10,
-                    AvatarPath = "/images/user-avatar.png"
-                });
-                await context.SaveChangesAsync();
             }
         }
 
@@ -124,10 +102,10 @@ public static class SeedData
             context.Publicaciones.AddRange(
                 new Publicacion
                 {
-                    Usuario = "admin@bemahou.com",
+                    Usuario = "Administrador",
                     Bar = "Bar Mahou Original",
                     Experiencia = "La mejor Mahou Clásica que he probado en mi vida. Ambiente auténtico y tapas increíbles.",
-                    Estrellas = 15, // Puntos calculados
+                    Estrellas = 15,
                     Evento = TipoEvento.Bar,
                     Fecha = now.AddDays(-5),
                     FotoPath = "/images/sample-bares/bar-mahou.jpg",
@@ -135,14 +113,14 @@ public static class SeedData
                 },
                 new Publicacion
                 {
-                    Usuario = "premium@bemahou.com",
+                    Usuario = "Usuario Premium",
                     Bar = "Festival de Cerveza Madrid",
                     Experiencia = "Increíble variedad de cervezas Mahou, incluyendo ediciones especiales. La Mahou Cinco Estrellas fue mi favorita.",
-                    Estrellas = 12, // Puntos calculados
+                    Estrellas = 12,
                     Evento = TipoEvento.Festival,
                     Fecha = now.AddDays(-3),
                     FotoPath = "/images/sample-bares/festival-madrid.jpg",
-                    UsuarioId = premiumUser?.Id
+                    UsuarioId = premiumUser.Id
                 }
             );
 
@@ -158,31 +136,16 @@ public static class SeedData
                     {
                         Texto = "¡Totalmente de acuerdo! El Bar Mahou es mi favorito también.",
                         Fecha = now.AddDays(-4),
-                        Usuario = "user@bemahou.com",
+                        Usuario = "Usuario Normal",
                         PublicacionId = primeraPublicacion.Id,
-                        EsUtil = true
+                        EsUtil = true,
+                        UsuarioId = normalUser.Id
                     }
                 );
 
                 await context.SaveChangesAsync();
             }
         }
-
-        // Actualizar puntos basados en interacciones
-        foreach (var publicacion in context.Publicaciones)
-        {
-            publicacion.CalcularEstrellas();
-        }
-        await context.SaveChangesAsync();
-
-        // Actualizar estrellas acumuladas de usuarios
-        foreach (var usuario in context.Usuarios)
-        {
-            usuario.EstrellasAcumuladas = context.Publicaciones
-                .Where(p => p.UsuarioId == usuario.UsuarioId)
-                .Sum(p => p.Estrellas);
-        }
-        await context.SaveChangesAsync();
 
         // Crear directorios necesarios
         CreateDirectoryIfNotExists(Path.Combine(env.WebRootPath, "uploads"));

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "i6Bl32IKs9VARv8lkj6BAl+lRkDFP3DDB4ST1ca7ByA=",
+  "Hash": "O/3q74QrxIZlM30BofCRxgHjIV0+Es5b1mTwadR+yNc=",
   "Source": "beMahou",
   "BasePath": "_content/beMahou",
   "Mode": "Default",
@@ -2243,12 +2243,12 @@
       "OriginalItemSpec": "/Users/rubenvmu/.nuget/packages/microsoft.aspnetcore.identity.ui/9.0.4/staticwebassets/V5/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "/Users/rubenvmu/beMahou/beMahou/obj/Debug/net9.0/compressed/byp8jiqf7u-3n4sag0yyi.gz",
+      "Identity": "/Users/rubenvmu/beMahou/beMahou/obj/Debug/net9.0/compressed/byp8jiqf7u-vyzqixx65c.gz",
       "SourceId": "beMahou",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/rubenvmu/beMahou/beMahou/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/beMahou",
-      "RelativePath": "css/feed#[.{fingerprint=3n4sag0yyi}]?.css.gz",
+      "RelativePath": "css/feed#[.{fingerprint=vyzqixx65c}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -2257,8 +2257,8 @@
       "RelatedAsset": "/Users/rubenvmu/beMahou/beMahou/wwwroot/css/feed.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "hsf3hmc48v",
-      "Integrity": "TwTuGwCgsn72Ij3XFBY2w2Qc+YviO7IRpkwm7SBp3I0=",
+      "Fingerprint": "k77066arj3",
+      "Integrity": "gCJAB+4iZXs+Bn0rUpjSoNz/LEWLaKGlNwk5fLiRHQQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/rubenvmu/beMahou/beMahou/wwwroot/css/feed.css"
@@ -2978,12 +2978,12 @@
       "OriginalItemSpec": "/Users/rubenvmu/beMahou/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "/Users/rubenvmu/beMahou/beMahou/obj/Debug/net9.0/compressed/na2optg9rv-xa4eip7ais.gz",
+      "Identity": "/Users/rubenvmu/beMahou/beMahou/obj/Debug/net9.0/compressed/na2optg9rv-olk8xtjz2r.gz",
       "SourceId": "beMahou",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/rubenvmu/beMahou/beMahou/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/beMahou",
-      "RelativePath": "css/site#[.{fingerprint=xa4eip7ais}]?.css.gz",
+      "RelativePath": "css/site#[.{fingerprint=olk8xtjz2r}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -2992,8 +2992,8 @@
       "RelatedAsset": "/Users/rubenvmu/beMahou/beMahou/wwwroot/css/site.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "313tpg2j5t",
-      "Integrity": "aXKKja/E+HzIZ9MYLJwGTM4aXpdpY6qwU8lXqykzEJE=",
+      "Fingerprint": "aw4hy92bt1",
+      "Integrity": "Cjn/inQNeRIpMkRLZegagDozOe41DABuUCrqevfTs8I=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/rubenvmu/beMahou/beMahou/wwwroot/css/site.css"
@@ -4070,6 +4070,27 @@
       "OriginalItemSpec": "/Users/rubenvmu/beMahou/beMahou/obj/Debug/net9.0/scopedcss/projectbundle/beMahou.bundle.scp.css"
     },
     {
+      "Identity": "/Users/rubenvmu/beMahou/beMahou/wwwroot/avatars/a06fb5fe-7b7b-4812-ae62-b14dd6f5960e.png",
+      "SourceId": "beMahou",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/rubenvmu/beMahou/beMahou/wwwroot/",
+      "BasePath": "_content/beMahou",
+      "RelativePath": "avatars/a06fb5fe-7b7b-4812-ae62-b14dd6f5960e#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6pt4qpqw91",
+      "Integrity": "Wm3UqRTuUlVyzLaVvxtHsgfJU4OsmUEchau5Lan3aI8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/avatars/a06fb5fe-7b7b-4812-ae62-b14dd6f5960e.png"
+    },
+    {
       "Identity": "/Users/rubenvmu/beMahou/beMahou/wwwroot/css/feed.css",
       "SourceId": "beMahou",
       "SourceType": "Discovered",
@@ -4084,8 +4105,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "3n4sag0yyi",
-      "Integrity": "ge8ijo7NKsHqmCG1z7sjDCNkWeKjbyWPltKbBw8IS5I=",
+      "Fingerprint": "vyzqixx65c",
+      "Integrity": "acHUEWbrOw+dwdtSfSswXsdCkhNCI+j2TjFmC8Py/wg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/feed.css"
@@ -4105,8 +4126,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "xa4eip7ais",
-      "Integrity": "t6wEhE38aYWeQYeS+ciNPS6REltg2EAQUF3LFCkcUF8=",
+      "Fingerprint": "olk8xtjz2r",
+      "Integrity": "tKD4c+Zp4ELsf+Q/9yeaJB0tEdpJxvECyM13TWSY4TE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/site.css"
@@ -4131,6 +4152,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/favicon.ico"
+    },
+    {
+      "Identity": "/Users/rubenvmu/beMahou/beMahou/wwwroot/images/default-avatar.png",
+      "SourceId": "beMahou",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/rubenvmu/beMahou/beMahou/wwwroot/",
+      "BasePath": "_content/beMahou",
+      "RelativePath": "images/default-avatar#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0o9kwgmvlr",
+      "Integrity": "EBJ9EUeri5KcRwwFt66DIf4pZvQmsv//0TyIc9ytNmQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/default-avatar.png"
     },
     {
       "Identity": "/Users/rubenvmu/beMahou/beMahou/wwwroot/js/feed.js",
@@ -5454,9 +5496,154 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/uploads/38724b63-2774-4c60-97c3-6de4366263e4.png"
+    },
+    {
+      "Identity": "/Users/rubenvmu/beMahou/beMahou/wwwroot/uploads/bc853dbd-d381-40f3-afd5-846ef6abde54.png",
+      "SourceId": "beMahou",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/rubenvmu/beMahou/beMahou/wwwroot/",
+      "BasePath": "_content/beMahou",
+      "RelativePath": "uploads/bc853dbd-d381-40f3-afd5-846ef6abde54#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6pt4qpqw91",
+      "Integrity": "Wm3UqRTuUlVyzLaVvxtHsgfJU4OsmUEchau5Lan3aI8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/bc853dbd-d381-40f3-afd5-846ef6abde54.png"
+    },
+    {
+      "Identity": "/Users/rubenvmu/beMahou/beMahou/wwwroot/uploads/img-mahou-san-miguel-adquiere-el-51-de-la-sociedad-que-gestionara-el-mayor-recinto-de-ocio-y-musica-690.jpg",
+      "SourceId": "beMahou",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/rubenvmu/beMahou/beMahou/wwwroot/",
+      "BasePath": "_content/beMahou",
+      "RelativePath": "uploads/img-mahou-san-miguel-adquiere-el-51-de-la-sociedad-que-gestionara-el-mayor-recinto-de-ocio-y-musica-690#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "j6dkl4yrgw",
+      "Integrity": "Rdv7CjaDZxyDLip5uILNXhwDnbblgjRNXAl+dxpYRIM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/img-mahou-san-miguel-adquiere-el-51-de-la-sociedad-que-gestionara-el-mayor-recinto-de-ocio-y-musica-690.jpg"
+    },
+    {
+      "Identity": "/Users/rubenvmu/beMahou/beMahou/wwwroot/uploads/stars.png",
+      "SourceId": "beMahou",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/rubenvmu/beMahou/beMahou/wwwroot/",
+      "BasePath": "_content/beMahou",
+      "RelativePath": "uploads/stars#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0k6au38i46",
+      "Integrity": "sAlNoS9Rp69YRNwTrYaxGJpQ1+fewzxMqsG+AWfPVzk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/stars.png"
     }
   ],
   "Endpoints": [
+    {
+      "Route": "avatars/a06fb5fe-7b7b-4812-ae62-b14dd6f5960e.6pt4qpqw91.png",
+      "AssetFile": "/Users/rubenvmu/beMahou/beMahou/wwwroot/avatars/a06fb5fe-7b7b-4812-ae62-b14dd6f5960e.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "643144"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Wm3UqRTuUlVyzLaVvxtHsgfJU4OsmUEchau5Lan3aI8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 30 Apr 2025 22:42:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6pt4qpqw91"
+        },
+        {
+          "Name": "label",
+          "Value": "avatars/a06fb5fe-7b7b-4812-ae62-b14dd6f5960e.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Wm3UqRTuUlVyzLaVvxtHsgfJU4OsmUEchau5Lan3aI8="
+        }
+      ]
+    },
+    {
+      "Route": "avatars/a06fb5fe-7b7b-4812-ae62-b14dd6f5960e.png",
+      "AssetFile": "/Users/rubenvmu/beMahou/beMahou/wwwroot/avatars/a06fb5fe-7b7b-4812-ae62-b14dd6f5960e.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "643144"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Wm3UqRTuUlVyzLaVvxtHsgfJU4OsmUEchau5Lan3aI8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 30 Apr 2025 22:42:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Wm3UqRTuUlVyzLaVvxtHsgfJU4OsmUEchau5Lan3aI8="
+        }
+      ]
+    },
     {
       "Route": "beMahou.bundle.scp.css",
       "AssetFile": "/Users/rubenvmu/beMahou/beMahou/obj/Debug/net9.0/compressed/ni8mqruy0d-dzgp7dmqpf.gz",
@@ -5482,7 +5669,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Apr 2025 20:25:47 GMT"
+          "Value": "Wed, 30 Apr 2025 22:17:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5535,7 +5722,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Apr 2025 20:25:47 GMT"
+          "Value": "Wed, 30 Apr 2025 22:17:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5572,7 +5759,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Apr 2025 20:25:47 GMT"
+          "Value": "Wed, 30 Apr 2025 22:17:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5619,7 +5806,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Apr 2025 20:25:47 GMT"
+          "Value": "Wed, 30 Apr 2025 22:17:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5680,7 +5867,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Apr 2025 20:25:47 GMT"
+          "Value": "Wed, 30 Apr 2025 22:17:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5725,7 +5912,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Apr 2025 20:25:47 GMT"
+          "Value": "Wed, 30 Apr 2025 22:17:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5780,7 +5967,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Apr 2025 20:25:47 GMT"
+          "Value": "Wed, 30 Apr 2025 22:17:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5841,7 +6028,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Apr 2025 20:25:47 GMT"
+          "Value": "Wed, 30 Apr 2025 22:17:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5886,7 +6073,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Apr 2025 20:25:47 GMT"
+          "Value": "Wed, 30 Apr 2025 22:17:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5941,7 +6128,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Apr 2025 20:25:47 GMT"
+          "Value": "Wed, 30 Apr 2025 22:17:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5994,7 +6181,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Apr 2025 20:25:47 GMT"
+          "Value": "Wed, 30 Apr 2025 22:17:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6031,7 +6218,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Apr 2025 20:25:47 GMT"
+          "Value": "Wed, 30 Apr 2025 22:17:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6054,13 +6241,13 @@
       ]
     },
     {
-      "Route": "css/feed.3n4sag0yyi.css",
-      "AssetFile": "/Users/rubenvmu/beMahou/beMahou/obj/Debug/net9.0/compressed/byp8jiqf7u-3n4sag0yyi.gz",
+      "Route": "css/feed.css",
+      "AssetFile": "/Users/rubenvmu/beMahou/beMahou/obj/Debug/net9.0/compressed/byp8jiqf7u-vyzqixx65c.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000821692687"
+          "Quality": "0.000819672131"
         }
       ],
       "ResponseHeaders": [
@@ -6070,19 +6257,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1216"
+          "Value": "1219"
         },
         {
           "Name": "ETag",
-          "Value": "\"TwTuGwCgsn72Ij3XFBY2w2Qc+YviO7IRpkwm7SBp3I0=\""
+          "Value": "\"gCJAB+4iZXs+Bn0rUpjSoNz/LEWLaKGlNwk5fLiRHQQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Apr 2025 19:45:17 GMT"
+          "Value": "Wed, 30 Apr 2025 23:07:22 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -6098,26 +6285,18 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"ge8ijo7NKsHqmCG1z7sjDCNkWeKjbyWPltKbBw8IS5I=\""
+          "Value": "W/\"acHUEWbrOw+dwdtSfSswXsdCkhNCI+j2TjFmC8Py/wg=\""
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "3n4sag0yyi"
-        },
-        {
-          "Name": "label",
-          "Value": "css/feed.css"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-ge8ijo7NKsHqmCG1z7sjDCNkWeKjbyWPltKbBw8IS5I="
+          "Value": "sha256-acHUEWbrOw+dwdtSfSswXsdCkhNCI+j2TjFmC8Py/wg="
         }
       ]
     },
     {
-      "Route": "css/feed.3n4sag0yyi.css",
+      "Route": "css/feed.css",
       "AssetFile": "/Users/rubenvmu/beMahou/beMahou/wwwroot/css/feed.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -6127,7 +6306,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4518"
+          "Value": "4519"
         },
         {
           "Name": "Content-Type",
@@ -6135,11 +6314,156 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ge8ijo7NKsHqmCG1z7sjDCNkWeKjbyWPltKbBw8IS5I=\""
+          "Value": "\"acHUEWbrOw+dwdtSfSswXsdCkhNCI+j2TjFmC8Py/wg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Apr 2025 19:45:17 GMT"
+          "Value": "Wed, 30 Apr 2025 23:07:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-acHUEWbrOw+dwdtSfSswXsdCkhNCI+j2TjFmC8Py/wg="
+        }
+      ]
+    },
+    {
+      "Route": "css/feed.css.gz",
+      "AssetFile": "/Users/rubenvmu/beMahou/beMahou/obj/Debug/net9.0/compressed/byp8jiqf7u-vyzqixx65c.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1219"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gCJAB+4iZXs+Bn0rUpjSoNz/LEWLaKGlNwk5fLiRHQQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 30 Apr 2025 23:07:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gCJAB+4iZXs+Bn0rUpjSoNz/LEWLaKGlNwk5fLiRHQQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/feed.vyzqixx65c.css",
+      "AssetFile": "/Users/rubenvmu/beMahou/beMahou/obj/Debug/net9.0/compressed/byp8jiqf7u-vyzqixx65c.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000819672131"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1219"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gCJAB+4iZXs+Bn0rUpjSoNz/LEWLaKGlNwk5fLiRHQQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 30 Apr 2025 23:07:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"acHUEWbrOw+dwdtSfSswXsdCkhNCI+j2TjFmC8Py/wg=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vyzqixx65c"
+        },
+        {
+          "Name": "label",
+          "Value": "css/feed.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-acHUEWbrOw+dwdtSfSswXsdCkhNCI+j2TjFmC8Py/wg="
+        }
+      ]
+    },
+    {
+      "Route": "css/feed.vyzqixx65c.css",
+      "AssetFile": "/Users/rubenvmu/beMahou/beMahou/wwwroot/css/feed.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4519"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"acHUEWbrOw+dwdtSfSswXsdCkhNCI+j2TjFmC8Py/wg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 30 Apr 2025 23:07:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6149,7 +6473,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "3n4sag0yyi"
+          "Value": "vyzqixx65c"
         },
         {
           "Name": "label",
@@ -6157,13 +6481,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-ge8ijo7NKsHqmCG1z7sjDCNkWeKjbyWPltKbBw8IS5I="
+          "Value": "sha256-acHUEWbrOw+dwdtSfSswXsdCkhNCI+j2TjFmC8Py/wg="
         }
       ]
     },
     {
-      "Route": "css/feed.3n4sag0yyi.css.gz",
-      "AssetFile": "/Users/rubenvmu/beMahou/beMahou/obj/Debug/net9.0/compressed/byp8jiqf7u-3n4sag0yyi.gz",
+      "Route": "css/feed.vyzqixx65c.css.gz",
+      "AssetFile": "/Users/rubenvmu/beMahou/beMahou/obj/Debug/net9.0/compressed/byp8jiqf7u-vyzqixx65c.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6172,7 +6496,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1216"
+          "Value": "1219"
         },
         {
           "Name": "Content-Type",
@@ -6180,11 +6504,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"TwTuGwCgsn72Ij3XFBY2w2Qc+YviO7IRpkwm7SBp3I0=\""
+          "Value": "\"gCJAB+4iZXs+Bn0rUpjSoNz/LEWLaKGlNwk5fLiRHQQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Apr 2025 19:45:17 GMT"
+          "Value": "Wed, 30 Apr 2025 23:07:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6202,7 +6526,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "3n4sag0yyi"
+          "Value": "vyzqixx65c"
         },
         {
           "Name": "label",
@@ -6210,144 +6534,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-TwTuGwCgsn72Ij3XFBY2w2Qc+YviO7IRpkwm7SBp3I0="
-        }
-      ]
-    },
-    {
-      "Route": "css/feed.css",
-      "AssetFile": "/Users/rubenvmu/beMahou/beMahou/obj/Debug/net9.0/compressed/byp8jiqf7u-3n4sag0yyi.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000821692687"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1216"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"TwTuGwCgsn72Ij3XFBY2w2Qc+YviO7IRpkwm7SBp3I0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 30 Apr 2025 19:45:17 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"ge8ijo7NKsHqmCG1z7sjDCNkWeKjbyWPltKbBw8IS5I=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-ge8ijo7NKsHqmCG1z7sjDCNkWeKjbyWPltKbBw8IS5I="
-        }
-      ]
-    },
-    {
-      "Route": "css/feed.css",
-      "AssetFile": "/Users/rubenvmu/beMahou/beMahou/wwwroot/css/feed.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "4518"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ge8ijo7NKsHqmCG1z7sjDCNkWeKjbyWPltKbBw8IS5I=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 30 Apr 2025 19:45:17 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-ge8ijo7NKsHqmCG1z7sjDCNkWeKjbyWPltKbBw8IS5I="
-        }
-      ]
-    },
-    {
-      "Route": "css/feed.css.gz",
-      "AssetFile": "/Users/rubenvmu/beMahou/beMahou/obj/Debug/net9.0/compressed/byp8jiqf7u-3n4sag0yyi.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1216"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"TwTuGwCgsn72Ij3XFBY2w2Qc+YviO7IRpkwm7SBp3I0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 30 Apr 2025 19:45:17 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-TwTuGwCgsn72Ij3XFBY2w2Qc+YviO7IRpkwm7SBp3I0="
+          "Value": "sha256-gCJAB+4iZXs+Bn0rUpjSoNz/LEWLaKGlNwk5fLiRHQQ="
         }
       ]
     },
@@ -6390,12 +6577,12 @@
     },
     {
       "Route": "css/site.css",
-      "AssetFile": "/Users/rubenvmu/beMahou/beMahou/obj/Debug/net9.0/compressed/na2optg9rv-xa4eip7ais.gz",
+      "AssetFile": "/Users/rubenvmu/beMahou/beMahou/obj/Debug/net9.0/compressed/na2optg9rv-olk8xtjz2r.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000809061489"
+          "Quality": "0.000805152979"
         }
       ],
       "ResponseHeaders": [
@@ -6405,15 +6592,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1235"
+          "Value": "1241"
         },
         {
           "Name": "ETag",
-          "Value": "\"aXKKja/E+HzIZ9MYLJwGTM4aXpdpY6qwU8lXqykzEJE=\""
+          "Value": "\"Cjn/inQNeRIpMkRLZegagDozOe41DABuUCrqevfTs8I=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Apr 2025 20:38:01 GMT"
+          "Value": "Wed, 30 Apr 2025 23:08:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6433,13 +6620,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"t6wEhE38aYWeQYeS+ciNPS6REltg2EAQUF3LFCkcUF8=\""
+          "Value": "W/\"tKD4c+Zp4ELsf+Q/9yeaJB0tEdpJxvECyM13TWSY4TE=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-t6wEhE38aYWeQYeS+ciNPS6REltg2EAQUF3LFCkcUF8="
+          "Value": "sha256-tKD4c+Zp4ELsf+Q/9yeaJB0tEdpJxvECyM13TWSY4TE="
         }
       ]
     },
@@ -6454,7 +6641,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4419"
+          "Value": "4405"
         },
         {
           "Name": "Content-Type",
@@ -6462,11 +6649,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"t6wEhE38aYWeQYeS+ciNPS6REltg2EAQUF3LFCkcUF8=\""
+          "Value": "\"tKD4c+Zp4ELsf+Q/9yeaJB0tEdpJxvECyM13TWSY4TE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Apr 2025 20:38:01 GMT"
+          "Value": "Wed, 30 Apr 2025 23:08:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6476,13 +6663,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-t6wEhE38aYWeQYeS+ciNPS6REltg2EAQUF3LFCkcUF8="
+          "Value": "sha256-tKD4c+Zp4ELsf+Q/9yeaJB0tEdpJxvECyM13TWSY4TE="
         }
       ]
     },
     {
       "Route": "css/site.css.gz",
-      "AssetFile": "/Users/rubenvmu/beMahou/beMahou/obj/Debug/net9.0/compressed/na2optg9rv-xa4eip7ais.gz",
+      "AssetFile": "/Users/rubenvmu/beMahou/beMahou/obj/Debug/net9.0/compressed/na2optg9rv-olk8xtjz2r.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6491,7 +6678,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1235"
+          "Value": "1241"
         },
         {
           "Name": "Content-Type",
@@ -6499,11 +6686,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"aXKKja/E+HzIZ9MYLJwGTM4aXpdpY6qwU8lXqykzEJE=\""
+          "Value": "\"Cjn/inQNeRIpMkRLZegagDozOe41DABuUCrqevfTs8I=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Apr 2025 20:38:01 GMT"
+          "Value": "Wed, 30 Apr 2025 23:08:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6521,18 +6708,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-aXKKja/E+HzIZ9MYLJwGTM4aXpdpY6qwU8lXqykzEJE="
+          "Value": "sha256-Cjn/inQNeRIpMkRLZegagDozOe41DABuUCrqevfTs8I="
         }
       ]
     },
     {
-      "Route": "css/site.xa4eip7ais.css",
-      "AssetFile": "/Users/rubenvmu/beMahou/beMahou/obj/Debug/net9.0/compressed/na2optg9rv-xa4eip7ais.gz",
+      "Route": "css/site.olk8xtjz2r.css",
+      "AssetFile": "/Users/rubenvmu/beMahou/beMahou/obj/Debug/net9.0/compressed/na2optg9rv-olk8xtjz2r.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000809061489"
+          "Quality": "0.000805152979"
         }
       ],
       "ResponseHeaders": [
@@ -6542,15 +6729,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1235"
+          "Value": "1241"
         },
         {
           "Name": "ETag",
-          "Value": "\"aXKKja/E+HzIZ9MYLJwGTM4aXpdpY6qwU8lXqykzEJE=\""
+          "Value": "\"Cjn/inQNeRIpMkRLZegagDozOe41DABuUCrqevfTs8I=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Apr 2025 20:38:01 GMT"
+          "Value": "Wed, 30 Apr 2025 23:08:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6570,13 +6757,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"t6wEhE38aYWeQYeS+ciNPS6REltg2EAQUF3LFCkcUF8=\""
+          "Value": "W/\"tKD4c+Zp4ELsf+Q/9yeaJB0tEdpJxvECyM13TWSY4TE=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "xa4eip7ais"
+          "Value": "olk8xtjz2r"
         },
         {
           "Name": "label",
@@ -6584,12 +6771,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-t6wEhE38aYWeQYeS+ciNPS6REltg2EAQUF3LFCkcUF8="
+          "Value": "sha256-tKD4c+Zp4ELsf+Q/9yeaJB0tEdpJxvECyM13TWSY4TE="
         }
       ]
     },
     {
-      "Route": "css/site.xa4eip7ais.css",
+      "Route": "css/site.olk8xtjz2r.css",
       "AssetFile": "/Users/rubenvmu/beMahou/beMahou/wwwroot/css/site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -6599,7 +6786,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4419"
+          "Value": "4405"
         },
         {
           "Name": "Content-Type",
@@ -6607,11 +6794,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"t6wEhE38aYWeQYeS+ciNPS6REltg2EAQUF3LFCkcUF8=\""
+          "Value": "\"tKD4c+Zp4ELsf+Q/9yeaJB0tEdpJxvECyM13TWSY4TE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Apr 2025 20:38:01 GMT"
+          "Value": "Wed, 30 Apr 2025 23:08:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6621,7 +6808,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "xa4eip7ais"
+          "Value": "olk8xtjz2r"
         },
         {
           "Name": "label",
@@ -6629,13 +6816,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-t6wEhE38aYWeQYeS+ciNPS6REltg2EAQUF3LFCkcUF8="
+          "Value": "sha256-tKD4c+Zp4ELsf+Q/9yeaJB0tEdpJxvECyM13TWSY4TE="
         }
       ]
     },
     {
-      "Route": "css/site.xa4eip7ais.css.gz",
-      "AssetFile": "/Users/rubenvmu/beMahou/beMahou/obj/Debug/net9.0/compressed/na2optg9rv-xa4eip7ais.gz",
+      "Route": "css/site.olk8xtjz2r.css.gz",
+      "AssetFile": "/Users/rubenvmu/beMahou/beMahou/obj/Debug/net9.0/compressed/na2optg9rv-olk8xtjz2r.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6644,7 +6831,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1235"
+          "Value": "1241"
         },
         {
           "Name": "Content-Type",
@@ -6652,11 +6839,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"aXKKja/E+HzIZ9MYLJwGTM4aXpdpY6qwU8lXqykzEJE=\""
+          "Value": "\"Cjn/inQNeRIpMkRLZegagDozOe41DABuUCrqevfTs8I=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Apr 2025 20:38:01 GMT"
+          "Value": "Wed, 30 Apr 2025 23:08:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6674,7 +6861,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "xa4eip7ais"
+          "Value": "olk8xtjz2r"
         },
         {
           "Name": "label",
@@ -6682,7 +6869,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-aXKKja/E+HzIZ9MYLJwGTM4aXpdpY6qwU8lXqykzEJE="
+          "Value": "sha256-Cjn/inQNeRIpMkRLZegagDozOe41DABuUCrqevfTs8I="
         }
       ]
     },
@@ -15549,6 +15736,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-F1wMlgb/juW08DFUssW6Pm9EBKfjXXRiSK0F5FgXxJU="
+        }
+      ]
+    },
+    {
+      "Route": "images/default-avatar.0o9kwgmvlr.png",
+      "AssetFile": "/Users/rubenvmu/beMahou/beMahou/wwwroot/images/default-avatar.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "72852"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EBJ9EUeri5KcRwwFt66DIf4pZvQmsv//0TyIc9ytNmQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 30 Apr 2025 23:40:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0o9kwgmvlr"
+        },
+        {
+          "Name": "label",
+          "Value": "images/default-avatar.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EBJ9EUeri5KcRwwFt66DIf4pZvQmsv//0TyIc9ytNmQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/default-avatar.png",
+      "AssetFile": "/Users/rubenvmu/beMahou/beMahou/wwwroot/images/default-avatar.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "72852"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EBJ9EUeri5KcRwwFt66DIf4pZvQmsv//0TyIc9ytNmQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 30 Apr 2025 23:40:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EBJ9EUeri5KcRwwFt66DIf4pZvQmsv//0TyIc9ytNmQ="
         }
       ]
     },
@@ -36148,6 +36417,252 @@
         {
           "Name": "integrity",
           "Value": "sha256-Wm3UqRTuUlVyzLaVvxtHsgfJU4OsmUEchau5Lan3aI8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/bc853dbd-d381-40f3-afd5-846ef6abde54.6pt4qpqw91.png",
+      "AssetFile": "/Users/rubenvmu/beMahou/beMahou/wwwroot/uploads/bc853dbd-d381-40f3-afd5-846ef6abde54.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "643144"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Wm3UqRTuUlVyzLaVvxtHsgfJU4OsmUEchau5Lan3aI8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 30 Apr 2025 22:42:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6pt4qpqw91"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/bc853dbd-d381-40f3-afd5-846ef6abde54.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Wm3UqRTuUlVyzLaVvxtHsgfJU4OsmUEchau5Lan3aI8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/bc853dbd-d381-40f3-afd5-846ef6abde54.png",
+      "AssetFile": "/Users/rubenvmu/beMahou/beMahou/wwwroot/uploads/bc853dbd-d381-40f3-afd5-846ef6abde54.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "643144"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Wm3UqRTuUlVyzLaVvxtHsgfJU4OsmUEchau5Lan3aI8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 30 Apr 2025 22:42:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Wm3UqRTuUlVyzLaVvxtHsgfJU4OsmUEchau5Lan3aI8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/img-mahou-san-miguel-adquiere-el-51-de-la-sociedad-que-gestionara-el-mayor-recinto-de-ocio-y-musica-690.j6dkl4yrgw.jpg",
+      "AssetFile": "/Users/rubenvmu/beMahou/beMahou/wwwroot/uploads/img-mahou-san-miguel-adquiere-el-51-de-la-sociedad-que-gestionara-el-mayor-recinto-de-ocio-y-musica-690.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "57190"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Rdv7CjaDZxyDLip5uILNXhwDnbblgjRNXAl+dxpYRIM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 30 Apr 2025 22:49:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "j6dkl4yrgw"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/img-mahou-san-miguel-adquiere-el-51-de-la-sociedad-que-gestionara-el-mayor-recinto-de-ocio-y-musica-690.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Rdv7CjaDZxyDLip5uILNXhwDnbblgjRNXAl+dxpYRIM="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/img-mahou-san-miguel-adquiere-el-51-de-la-sociedad-que-gestionara-el-mayor-recinto-de-ocio-y-musica-690.jpg",
+      "AssetFile": "/Users/rubenvmu/beMahou/beMahou/wwwroot/uploads/img-mahou-san-miguel-adquiere-el-51-de-la-sociedad-que-gestionara-el-mayor-recinto-de-ocio-y-musica-690.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "57190"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Rdv7CjaDZxyDLip5uILNXhwDnbblgjRNXAl+dxpYRIM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 30 Apr 2025 22:49:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Rdv7CjaDZxyDLip5uILNXhwDnbblgjRNXAl+dxpYRIM="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/stars.0k6au38i46.png",
+      "AssetFile": "/Users/rubenvmu/beMahou/beMahou/wwwroot/uploads/stars.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "79293"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sAlNoS9Rp69YRNwTrYaxGJpQ1+fewzxMqsG+AWfPVzk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 30 Apr 2025 23:18:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0k6au38i46"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/stars.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-sAlNoS9Rp69YRNwTrYaxGJpQ1+fewzxMqsG+AWfPVzk="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/stars.png",
+      "AssetFile": "/Users/rubenvmu/beMahou/beMahou/wwwroot/uploads/stars.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "79293"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sAlNoS9Rp69YRNwTrYaxGJpQ1+fewzxMqsG+AWfPVzk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 30 Apr 2025 23:18:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-sAlNoS9Rp69YRNwTrYaxGJpQ1+fewzxMqsG+AWfPVzk="
         }
       ]
     }

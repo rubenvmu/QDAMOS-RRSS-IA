@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets/beMahou.dzgp7dmqpf.bundle.scp.css"
     },
     {
+      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/avatars/a06fb5fe-7b7b-4812-ae62-b14dd6f5960e.png",
+      "PackagePath": "staticwebassets/avatars/a06fb5fe-7b7b-4812-ae62-b14dd6f5960e.png"
+    },
+    {
       "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/css/feed.css",
       "PackagePath": "staticwebassets/css/feed.css"
     },
@@ -15,6 +19,10 @@
     {
       "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/favicon.ico",
       "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/images/default-avatar.png",
+      "PackagePath": "staticwebassets/images/default-avatar.png"
     },
     {
       "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/js/feed.js",
@@ -267,6 +275,18 @@
     {
       "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/uploads/38724b63-2774-4c60-97c3-6de4366263e4.png",
       "PackagePath": "staticwebassets/uploads/38724b63-2774-4c60-97c3-6de4366263e4.png"
+    },
+    {
+      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/uploads/bc853dbd-d381-40f3-afd5-846ef6abde54.png",
+      "PackagePath": "staticwebassets/uploads/bc853dbd-d381-40f3-afd5-846ef6abde54.png"
+    },
+    {
+      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/uploads/img-mahou-san-miguel-adquiere-el-51-de-la-sociedad-que-gestionara-el-mayor-recinto-de-ocio-y-musica-690.jpg",
+      "PackagePath": "staticwebassets/uploads/img-mahou-san-miguel-adquiere-el-51-de-la-sociedad-que-gestionara-el-mayor-recinto-de-ocio-y-musica-690.jpg"
+    },
+    {
+      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/uploads/stars.png",
+      "PackagePath": "staticwebassets/uploads/stars.png"
     },
     {
       "Id": "obj/Debug/net9.0/staticwebassets/msbuild.beMahou.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

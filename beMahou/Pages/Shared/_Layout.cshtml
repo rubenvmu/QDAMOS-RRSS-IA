@@ -8,6 +8,45 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/mobile.css" asp-append-version="true" id="mobile-css" disabled />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+        :root {
+            --be-mahou-red: #c8102e;
+            --be-mahou-dark-red: #a50d26;
+        }
+        
+        body.be-mahou-body {
+            background-color: #ffffff;
+        }
+        
+        /* Estilo para avatar circular */
+        .be-mahou-user-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--be-mahou-red);
+        }
+        
+        /* Estilo para estrella roja Mahou */
+        .be-mahou-star {
+            color: var(--be-mahou-red) !important;
+        }
+        
+        .be-mahou-star-counter .fa-star {
+            color: var(--be-mahou-red) !important;
+        }
+        
+        @@media (min-width: 701px) {
+            .solo-movil {
+                display: none !important;
+            }
+        }
+        
+        .be-mahou-stars-banner img {
+            max-width: 40%;
+            height: auto;
+        }
+    </style>
     @RenderSection("Styles", required: false)
 </head>
 <body class="be-mahou-body">
@@ -19,22 +58,19 @@
             </a>
             
             <div class="d-flex align-items-center gap-3">
-                <!-- Botón de cambio de vista -->
-    
-
                 <!-- Menú principal -->
                 <ul class="navbar-nav d-none d-lg-flex">
                     <li class="nav-item mx-2">
                         <a class="nav-link fw-bold" asp-page="/Categoria/Sorteos">Bares</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link fw-bold" asp-page="/NuevaPublicacion">Conciertos</a>
+                        <a class="nav-link fw-bold" asp-page="/Conciertos">Festivales</a>
                     </li>
                     <li class="nav-item mx-2">
                         <a class="nav-link fw-bold" asp-page="/Categoria/Quedadas">Quedadas</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link fw-bold" asp-page="/Categoria/Sorteos">Eventos</a>
+                        <a class="nav-link fw-bold" asp-page="/Categoria/Eventos">Eventos</a>
                     </li>
                     <li class="nav-item mx-2">
                         <a class="nav-link fw-bold" asp-page="/Categoria/Sorteos">Sorteos</a>
@@ -47,11 +83,16 @@
                     <span class="fw-bold">725</span>
                 </div>
 
-                <!-- Login -->
+                <!-- Login con avatar circular -->
                 <partial name="_LoginPartial" />
             </div>
         </div>
     </nav>
+
+    <!-- Banner de estrellas solo móvil -->
+    <div class="be-mahou-stars-banner text-center solo-movil">
+        <img src="/uploads/stars.png" alt="Estrellas" class="img-fluid">
+    </div>
 
     <!-- Contenido principal -->
     <main class="be-mahou-main-content">
@@ -66,16 +107,15 @@
             <div class="d-flex justify-content-around w-100 align-items-center">
                 <a href="/" class="be-mahou-mobile-nav-item text-white text-center py-2">
                     <i class="fas fa-home fa-lg d-block mb-1"></i>
-                    <span class="small">Inicio</span>
+                    <span class="small">Bares</span>
                 </a>
                 <a href="/Festivales" class="be-mahou-mobile-nav-item text-white text-center py-2">
                     <i class="fas fa-music fa-lg d-block mb-1"></i>
                     <span class="small">Conciertos</span>
                 </a>
-                <a href="/Create" class="be-mahou-mobile-nav-item text-white text-center py-2">
-                    <div class="be-mahou-mobile-nav-center">
-                        <i class="fas fa-plus-circle fa-2x"></i>
-                    </div>
+                <a href="/Quedadas" class="be-mahou-mobile-nav-item text-white text-center py-2">
+                    <i class="fas fa-plus-circle fa-2x d-block mb-1"></i>
+                    <span class="small"></span>
                 </a>
                 <a href="/Quedadas" class="be-mahou-mobile-nav-item text-white text-center py-2">
                     <i class="fas fa-users fa-lg d-block mb-1"></i>
@@ -90,7 +130,7 @@
     </nav>
 
     <!-- Botón flotante para desktop -->
-    <a href="/NuevaPublicacion" class="be-mahou-floating-btn btn btn-danger rounded-circle p-3 d-none d-md-flex">
+    <a href="/Crear" class="be-mahou-floating-btn btn btn-danger rounded-circle p-3 d-none d-md-flex">
         <i class="fas fa-plus fa-lg"></i>
     </a>
 

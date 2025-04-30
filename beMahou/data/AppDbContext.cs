@@ -5,7 +5,7 @@ using beMahou.Models;
 
 namespace beMahou.Data
 {
-    public class AppDbContext : IdentityDbContext<IdentityUser>
+    public class AppDbContext : IdentityDbContext<UsuarioMahou>
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
@@ -13,12 +13,13 @@ namespace beMahou.Data
 
         public DbSet<Publicacion> Publicaciones { get; set; }
         public DbSet<Comentario> Comentarios { get; set; }
-        public DbSet<UsuarioMahou> Usuarios { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-    modelBuilder.Entity<Publicacion>().Ignore(p => p.ImagenFile);
+            
+            // Ignorar propiedad no mapeada
+            modelBuilder.Entity<Publicacion>().Ignore(p => p.ImagenFile);
 
             // Configuración de Publicacion
             modelBuilder.Entity<Publicacion>(entity =>
@@ -40,33 +41,34 @@ namespace beMahou.Data
                 entity.Property(p => p.Fecha)
                     .HasDefaultValueSql("CURRENT_TIMESTAMP");
                     
-                // Cambiado a valor por defecto 0 y comentario actualizado
                 entity.Property(p => p.Estrellas)
-                    .HasDefaultValue(0)
-                    .HasComment("Puntos acumulables (antes llamado estrellas)");
+                    .HasDefaultValue(0);
                     
                 entity.Property(p => p.FotoPath)
                     .HasMaxLength(255);
                     
                 entity.Property(p => p.Evento)
                     .IsRequired()
-                    .HasConversion<string>() // Guarda el enum como string
+                    .HasConversion<string>()
                     .HasMaxLength(50);
                     
-                entity.Property(p => p.UsuarioId)
-                    .HasMaxLength(450); // Tamaño para IdentityUser Id
-
+                // Relación con UsuarioMahou
+                entity.HasOne<UsuarioMahou>()
+                    .WithMany(u => u.Publicaciones)
+                    .HasForeignKey(p => p.UsuarioId)
+                    .OnDelete(DeleteBehavior.Restrict);
+                    
                 // Relación con Comentarios
                 entity.HasMany(p => p.Comentarios)
-                    .WithOne()
+                    .WithOne(c => c.Publicacion)
                     .HasForeignKey(c => c.PublicacionId)
                     .OnDelete(DeleteBehavior.Cascade);
                     
-                // Índices para mejor performance
+                // Índices
                 entity.HasIndex(p => p.Evento);
                 entity.HasIndex(p => p.Fecha);
                 entity.HasIndex(p => p.UsuarioId);
-                entity.HasIndex(p => p.Estrellas); // Nuevo índice para búsquedas por puntos
+                entity.HasIndex(p => p.Estrellas);
             });
 
             // Configuración de Comentario
@@ -76,7 +78,7 @@ namespace beMahou.Data
                 
                 entity.Property(c => c.Texto)
                     .IsRequired()
-                    .HasMaxLength(500); // Aumentado de 300 a 500
+                    .HasMaxLength(500);
                     
                 entity.Property(c => c.Fecha)
                     .HasDefaultValueSql("CURRENT_TIMESTAMP");
@@ -92,16 +94,14 @@ namespace beMahou.Data
                 entity.Property(c => c.EsUtil)
                     .HasDefaultValue(false);
                     
-                // Índices para mejor performance
+                // Índices
                 entity.HasIndex(c => c.PublicacionId);
                 entity.HasIndex(c => c.UsuarioId);
             });
 
-            // Configuración de UsuarioMahou
+            // Configuración de UsuarioMahou (heredado de IdentityUser)
             modelBuilder.Entity<UsuarioMahou>(entity =>
             {
-                entity.HasKey(u => u.Id);
-                
                 entity.Property(u => u.Nombre)
                     .IsRequired()
                     .HasMaxLength(100);
@@ -110,22 +110,7 @@ namespace beMahou.Data
                     .HasMaxLength(255);
                     
                 entity.Property(u => u.EstrellasAcumuladas)
-                    .HasDefaultValue(0)
-                    .HasComment("Puntos totales acumulados por el usuario");
-                    
-                entity.Property(u => u.UsuarioId)
-                    .IsRequired()
-                    .HasMaxLength(450);
-                    
-                // Relación con IdentityUser
-                entity.HasOne<IdentityUser>()
-                    .WithOne()
-                    .HasForeignKey<UsuarioMahou>(u => u.UsuarioId)
-                    .OnDelete(DeleteBehavior.Cascade);
-                    
-                // Índices para mejor performance
-                entity.HasIndex(u => u.UsuarioId)
-                    .IsUnique();
+                    .HasDefaultValue(0);
             });
         }
     }

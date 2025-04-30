@@ -43,7 +43,7 @@
 }
 
 #be-mahou-desktop-nav .nav-link:hover {
-  color: var(--be-mahou-red);
+  color: var(#e9ecef);
 }
 
 #be-mahou-desktop-nav .nav-link::after {
@@ -53,7 +53,7 @@
   left: 50%;
   width: 0;
   height: 2px;
-  background-color: var(--be-mahou-red);
+  background-color: var(#e9ecef);
   transition: var(--be-mahou-transition);
   transform: translateX(-50%);
 }
