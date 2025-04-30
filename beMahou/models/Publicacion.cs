@@ -11,13 +11,12 @@ public class Publicacion
     public required string Bar { get; set; }
     
     [Required]
-    [Display(Name = "Experiencia Mahou")]
     public required string Experiencia { get; set; }
     
     public DateTime Fecha { get; set; } = DateTime.Now;
-    public int Estrellas { get; set; }
+    public int Estrellas { get; set; } = 0;
     public string? FotoUrl { get; set; }
     public List<Comentario> Comentarios { get; set; } = new List<Comentario>();
     public Categoria Categoria { get; set; }
-    public string? UsuarioId { get; set; }
+    public string? UsuarioId { get; set; } // Make this nullable or set it in OnPost
 }

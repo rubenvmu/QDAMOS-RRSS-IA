@@ -17,7 +17,6 @@ public class IndexModel : PageModel
     {
         Publicaciones = await _context.Publicaciones
             .OrderByDescending(p => p.Fecha)
-            .Take(20)
             .ToListAsync();
     }
 }

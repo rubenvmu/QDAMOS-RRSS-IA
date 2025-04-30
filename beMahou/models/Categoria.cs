@@ -4,14 +4,14 @@ using System.Globalization;
 
 public enum Categoria
 {
-    [Display(Name = "Experiencia Clásica")]
+    [Display(Name = "Concursos")]
     Clasica,
-    [Display(Name = "Festival Mahou")]
+    [Display(Name = "Festival")]
     Festival,
-    [Display(Name = "Rincón Especial")]
+    [Display(Name = "Crear Publicación")]
     Rincon,
-    [Display(Name = "Concurso")]
+    [Display(Name = "Mapa")]
     Concurso,
-    [Display(Name = "Noche Mahou")]
+    [Display(Name = "Quedadas")]
     Noche
 }

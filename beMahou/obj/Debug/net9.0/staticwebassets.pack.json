@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
+      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/js/mobile.js",
+      "PackagePath": "staticwebassets/js/mobile.js"
+    },
+    {
       "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/js/site.js",
       "PackagePath": "staticwebassets/js/site.js"
     },
