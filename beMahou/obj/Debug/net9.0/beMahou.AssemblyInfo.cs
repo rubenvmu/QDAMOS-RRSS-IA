@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("beMahou")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f752509b14ec9a959aceb36596a47e13c2cc2f37")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+07783e82829634530323073db3d0f2d29d8a3ff8")]
 [assembly: System.Reflection.AssemblyProductAttribute("beMahou")]
 [assembly: System.Reflection.AssemblyTitleAttribute("beMahou")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
