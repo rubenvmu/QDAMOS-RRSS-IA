@@ -25,8 +25,16 @@
       "PackagePath": "staticwebassets/images/default-avatar.png"
     },
     {
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/images/madrid.jpg",
+      "PackagePath": "staticwebassets/images/madrid.jpg"
+    },
+    {
       "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/images/podcast.jpeg",
       "PackagePath": "staticwebassets/images/podcast.jpeg"
+    },
+    {
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/images/zaragoza.jpeg",
+      "PackagePath": "staticwebassets/images/zaragoza.jpeg"
     },
     {
       "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/js/feed.js",

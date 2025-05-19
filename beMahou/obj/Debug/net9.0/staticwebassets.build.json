@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "V/DPRC5Zo7bo0wtVyw3Du3bFID8lg/v2SefFE0Uz9f8=",
+  "Hash": "dv441DJN1rYe2TwcRFmgZaubVbJy2KFKZRouylb6gsU=",
   "Source": "beMahou",
   "BasePath": "_content/beMahou",
   "Mode": "Default",
@@ -4175,6 +4175,27 @@
       "OriginalItemSpec": "wwwroot/images/default-avatar.png"
     },
     {
+      "Identity": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/images/madrid.jpg",
+      "SourceId": "beMahou",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/",
+      "BasePath": "_content/beMahou",
+      "RelativePath": "images/madrid#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "y5csuicwgx",
+      "Integrity": "aq3ae1QJOL3C03OzJe1ei62xYGMFHG+L+mGH4U8+q9Y=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/madrid.jpg"
+    },
+    {
       "Identity": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/images/podcast.jpeg",
       "SourceId": "beMahou",
       "SourceType": "Discovered",
@@ -4194,6 +4215,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/podcast.jpeg"
+    },
+    {
+      "Identity": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/images/zaragoza.jpeg",
+      "SourceId": "beMahou",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/",
+      "BasePath": "_content/beMahou",
+      "RelativePath": "images/zaragoza#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "265ur0u1ce",
+      "Integrity": "qpC/BhCn+U4cdsTa7MD0To52rOCz4dnO1oGIbJfpq38=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/zaragoza.jpeg"
     },
     {
       "Identity": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/js/feed.js",
@@ -15843,6 +15885,88 @@
       ]
     },
     {
+      "Route": "images/madrid.jpg",
+      "AssetFile": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/images/madrid.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1111649"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aq3ae1QJOL3C03OzJe1ei62xYGMFHG+L+mGH4U8+q9Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 19 May 2025 10:43:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-aq3ae1QJOL3C03OzJe1ei62xYGMFHG+L+mGH4U8+q9Y="
+        }
+      ]
+    },
+    {
+      "Route": "images/madrid.y5csuicwgx.jpg",
+      "AssetFile": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/images/madrid.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1111649"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aq3ae1QJOL3C03OzJe1ei62xYGMFHG+L+mGH4U8+q9Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 19 May 2025 10:43:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "y5csuicwgx"
+        },
+        {
+          "Name": "label",
+          "Value": "images/madrid.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-aq3ae1QJOL3C03OzJe1ei62xYGMFHG+L+mGH4U8+q9Y="
+        }
+      ]
+    },
+    {
       "Route": "images/podcast.he894tqrnn.jpeg",
       "AssetFile": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/images/podcast.jpeg",
       "Selectors": [],
@@ -15921,6 +16045,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-yQqt7ynaTX0x5WAEUZmzlPIm6Fhr1hBbqmaMT1J5+E4="
+        }
+      ]
+    },
+    {
+      "Route": "images/zaragoza.265ur0u1ce.jpeg",
+      "AssetFile": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/images/zaragoza.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "261363"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qpC/BhCn+U4cdsTa7MD0To52rOCz4dnO1oGIbJfpq38=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 19 May 2025 10:42:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "265ur0u1ce"
+        },
+        {
+          "Name": "label",
+          "Value": "images/zaragoza.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qpC/BhCn+U4cdsTa7MD0To52rOCz4dnO1oGIbJfpq38="
+        }
+      ]
+    },
+    {
+      "Route": "images/zaragoza.jpeg",
+      "AssetFile": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/images/zaragoza.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "261363"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qpC/BhCn+U4cdsTa7MD0To52rOCz4dnO1oGIbJfpq38=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 19 May 2025 10:42:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qpC/BhCn+U4cdsTa7MD0To52rOCz4dnO1oGIbJfpq38="
         }
       ]
     },
