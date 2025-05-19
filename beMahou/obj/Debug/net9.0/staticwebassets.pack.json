@@ -33,6 +33,10 @@
       "PackagePath": "staticwebassets/images/podcast.jpeg"
     },
     {
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/images/qdamos.png",
+      "PackagePath": "staticwebassets/images/qdamos.png"
+    },
+    {
       "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/images/zaragoza.jpeg",
       "PackagePath": "staticwebassets/images/zaragoza.jpeg"
     },

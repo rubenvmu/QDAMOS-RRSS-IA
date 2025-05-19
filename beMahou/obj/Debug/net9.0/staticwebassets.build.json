@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "dv441DJN1rYe2TwcRFmgZaubVbJy2KFKZRouylb6gsU=",
+  "Hash": "MAtergvH5wUEoN+iF1moHn18vnwoOmC5h/7plTjyjGg=",
   "Source": "beMahou",
   "BasePath": "_content/beMahou",
   "Mode": "Default",
@@ -4215,6 +4215,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/podcast.jpeg"
+    },
+    {
+      "Identity": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/images/qdamos.png",
+      "SourceId": "beMahou",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/",
+      "BasePath": "_content/beMahou",
+      "RelativePath": "images/qdamos#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "yr7m9fw8m6",
+      "Integrity": "3hWYthdnVe1ZT7ZzlTbsTE56Tu6zWATk3XhaJbqKatc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/qdamos.png"
     },
     {
       "Identity": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/images/zaragoza.jpeg",
@@ -16045,6 +16066,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-yQqt7ynaTX0x5WAEUZmzlPIm6Fhr1hBbqmaMT1J5+E4="
+        }
+      ]
+    },
+    {
+      "Route": "images/qdamos.png",
+      "AssetFile": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/images/qdamos.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "96963"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3hWYthdnVe1ZT7ZzlTbsTE56Tu6zWATk3XhaJbqKatc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 19 May 2025 10:49:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3hWYthdnVe1ZT7ZzlTbsTE56Tu6zWATk3XhaJbqKatc="
+        }
+      ]
+    },
+    {
+      "Route": "images/qdamos.yr7m9fw8m6.png",
+      "AssetFile": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/images/qdamos.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "96963"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3hWYthdnVe1ZT7ZzlTbsTE56Tu6zWATk3XhaJbqKatc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 19 May 2025 10:49:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yr7m9fw8m6"
+        },
+        {
+          "Name": "label",
+          "Value": "images/qdamos.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3hWYthdnVe1ZT7ZzlTbsTE56Tu6zWATk3XhaJbqKatc="
         }
       ]
     },

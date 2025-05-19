@@ -96,6 +96,18 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-yQqt7ynaTX0x5WAEUZmzlPIm6Fhr1hBbqmaMT1J5\u002BE4="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"238401"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022yQqt7ynaTX0x5WAEUZmzlPIm6Fhr1hBbqmaMT1J5\u002BE4=\u0022"},{"Name":"Last-Modified","Value":"Mon, 19 May 2025 10:38:40 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/beMahou/images/qdamos.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\qdamos.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-3hWYthdnVe1ZT7ZzlTbsTE56Tu6zWATk3XhaJbqKatc="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"96963"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00223hWYthdnVe1ZT7ZzlTbsTE56Tu6zWATk3XhaJbqKatc=\u0022"},{"Name":"Last-Modified","Value":"Mon, 19 May 2025 10:49:49 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/beMahou/images/qdamos.yr7m9fw8m6.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\qdamos.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"yr7m9fw8m6"},{"Name":"integrity","Value":"sha256-3hWYthdnVe1ZT7ZzlTbsTE56Tu6zWATk3XhaJbqKatc="},{"Name":"label","Value":"_content/beMahou/images/qdamos.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"96963"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00223hWYthdnVe1ZT7ZzlTbsTE56Tu6zWATk3XhaJbqKatc=\u0022"},{"Name":"Last-Modified","Value":"Mon, 19 May 2025 10:49:49 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/beMahou/images/zaragoza.265ur0u1ce.jpeg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\zaragoza.jpeg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
