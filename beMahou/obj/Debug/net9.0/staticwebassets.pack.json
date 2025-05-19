@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets/images/default-avatar.png"
     },
     {
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/images/fotomahou.jpg",
+      "PackagePath": "staticwebassets/images/fotomahou.jpg"
+    },
+    {
       "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/images/madrid.jpg",
       "PackagePath": "staticwebassets/images/madrid.jpg"
     },

@@ -1388,7 +1388,6 @@
 /Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/obj/Debug/net9.0/compressed/v0zgfp0y55-87fc7y1x7t.gz
 /Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/obj/Debug/net9.0/compressed/yfc7ypekbg-mlv21k5csn.gz
 /Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/obj/Debug/net9.0/compressed/byp8jiqf7u-vyzqixx65c.gz
-/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/obj/Debug/net9.0/compressed/na2optg9rv-6077xb9ixp.gz
 /Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/obj/Debug/net9.0/compressed/9g3m6szcf6-61n19gt1b8.gz
 /Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/obj/Debug/net9.0/compressed/44f4xuv7zv-nn5bzxghrs.gz
 /Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/obj/Debug/net9.0/compressed/gr8ongtl7d-tmijutvq8i.gz
@@ -1468,3 +1467,4 @@
 /Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/obj/Debug/net9.0/beMahou.pdb
 /Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/obj/Debug/net9.0/beMahou.genruntimeconfig.cache
 /Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/obj/Debug/net9.0/ref/beMahou.dll
+/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/obj/Debug/net9.0/compressed/na2optg9rv-4tuzjc7jim.gz
