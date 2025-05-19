@@ -1,6 +1,6 @@
 # beMahou
 
-Mahou APP UNIZAR
+QDAMOS - Unizar MAHOU LAB IA + RR. SS. Lab Experiencie Challange 2025
 
 ---
 
