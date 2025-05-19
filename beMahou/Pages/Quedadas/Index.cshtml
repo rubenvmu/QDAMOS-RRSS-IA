@@ -1,4 +1,78 @@
 ﻿@page
 @model MyApp.Namespace.IndexModel
 @{
+    ViewData["Title"] = "Quedadas Mahou";
+}
+
+<div class="container py-5">
+    <div class="text-center mb-5">
+        <h1 class="fw-bold" style="color: var(--be-mahou-red);">Quedadas Mahou</h1>
+        <p class="lead" style="color: var(--be-mahou-dark-red);">
+            Organiza quedadas con tus amigos para tomar Mahou, compartir buenos momentos y vivir experiencias únicas. ¡Crea tu plan y acepta los retos Mahou!
+        </p>
+    </div>
+
+    <div class="row g-4 mb-5">
+        <!-- Quedada 1 -->
+        <div class="col-md-6">
+            <div class="card h-100 shadow-sm border-0">
+                <img src="/images/zaragoza.jpeg" class="card-img-top" alt="Quedada 1">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold" style="color: var(--be-mahou-red);">Tardeo Mahou</h5>
+                    <p class="card-text">Zaragoza · 25 Mayo 2025<br>
+                        Un tardeo con amigos, tapas y Mahou en el centro de la ciudad.</p>
+                </div>
+                <div class="card-footer bg-white border-0">
+                    <a href="#" class="btn btn-danger w-100" style="background: var(--be-mahou-red); border: none;">Unirse</a>
+                </div>
+            </div>
+        </div>
+        <!-- Quedada 2 -->
+        <div class="col-md-6">
+            <div class="card h-100 shadow-sm border-0">
+                <img src="/images/madrid.jpeg" class="card-img-top" alt="Quedada 2">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold" style="color: var(--be-mahou-red);">Mahou Afterwork</h5>
+                    <p class="card-text">Madrid · 30 Mayo 2025<br>
+                        Desconecta del trabajo con una Mahou y buena compañía.</p>
+                </div>
+                <div class="card-footer bg-white border-0">
+                    <a href="#" class="btn btn-danger w-100" style="background: var(--be-mahou-red); border: none;">Unirse</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-5">
+        <h2 class="fw-bold mb-3" style="color: var(--be-mahou-red);">Reto Mahou Aleatorio</h2>
+        <div class="card shadow-sm border-0">
+            <div class="card-body text-center">
+                <span id="retoMahou" class="fs-5" style="color: var(--be-mahou-dark-red);">
+                    ¡Haz clic en el botón para descubrir tu reto Mahou!
+                </span>
+                <br />
+                <button class="btn btn-danger mt-3" style="background: var(--be-mahou-red); border: none;" onclick="retoAleatorioMahou()">Generar reto</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+<script>
+    const retos = [
+        "Hazte una foto brindando con Mahou y súbela a tus redes.",
+        "Invita a un amigo a una Mahou.",
+        "Canta tu canción favorita en el bar.",
+        "Haz un brindis original con tu grupo.",
+        "Comparte una anécdota divertida de una quedada pasada.",
+        "Haz una ronda de chistes Mahou.",
+        "Baila con tu grupo al menos una canción.",
+        "Haz una historia en Instagram mencionando a Mahou."
+    ];
+
+    function retoAleatorioMahou() {
+        const reto = retos[Math.floor(Math.random() * retos.length)];
+        document.getElementById('retoMahou').textContent = reto;
+    }
+</script>
 }

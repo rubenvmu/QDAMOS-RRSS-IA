@@ -1,4 +1,60 @@
 ﻿@page
 @model MyApp.Namespace.IndexModel
 @{
+    ViewData["Title"] = "Festivales Mahou";
 }
+
+<div class="container py-5">
+    <div class="text-center mb-5">
+        <h1 class="fw-bold" style="color: var(--be-mahou-red);">Festivales Mahou</h1>
+        <p class="lead" style="color: var(--be-mahou-dark-red);">
+            Vive la mejor música y ambiente en los festivales patrocinados por Mahou. ¡Descubre dónde disfrutar de la experiencia Mahou!
+        </p>
+        <img src="/uploads/mahou-festival-banner.png" alt="Mahou Festivales" class="img-fluid my-3" style="max-width: 350px;">
+    </div>
+
+    <div class="row g-4">
+        <!-- Festival 1 -->
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0">
+                <img src="/uploads/festival1.jpg" class="card-img-top" alt="Festival 1">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold" style="color: var(--be-mahou-red);">Mahou Sound Fest</h5>
+                    <p class="card-text">Zaragoza · 15-17 Junio 2025<br>
+                        Disfruta de los mejores grupos indie y pop en un ambiente único.</p>
+                </div>
+                <div class="card-footer bg-white border-0">
+                    <a href="#" class="btn btn-danger w-100" style="background: var(--be-mahou-red); border: none;">Ver detalles</a>
+                </div>
+            </div>
+        </div>
+        <!-- Festival 2 -->
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0">
+                <img src="/uploads/festival2.jpg" class="card-img-top" alt="Festival 2">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold" style="color: var(--be-mahou-red);">Mahou Rock Nights</h5>
+                    <p class="card-text">Madrid · 22-24 Julio 2025<br>
+                        Rock, food trucks y la mejor cerveza en el corazón de la ciudad.</p>
+                </div>
+                <div class="card-footer bg-white border-0">
+                    <a href="#" class="btn btn-danger w-100" style="background: var(--be-mahou-red); border: none;">Ver detalles</a>
+                </div>
+            </div>
+        </div>
+        <!-- Festival 3 -->
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0">
+                <img src="/uploads/festival3.jpg" class="card-img-top" alt="Festival 3">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold" style="color: var(--be-mahou-red);">Mahou Summer Fest</h5>
+                    <p class="card-text">Valencia · 5-7 Agosto 2025<br>
+                        Playa, música electrónica y Mahou bien fría para refrescarte.</p>
+                </div>
+                <div class="card-footer bg-white border-0">
+                    <a href="#" class="btn btn-danger w-100" style="background: var(--be-mahou-red); border: none;">Ver detalles</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

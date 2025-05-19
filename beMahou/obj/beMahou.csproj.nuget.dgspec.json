@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/rubenvmu/beMahou/beMahou/beMahou.csproj": {}
+    "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/beMahou.csproj": {}
   },
   "projects": {
-    "/Users/rubenvmu/beMahou/beMahou/beMahou.csproj": {
+    "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/beMahou.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/rubenvmu/beMahou/beMahou/beMahou.csproj",
+        "projectUniqueName": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/beMahou.csproj",
         "projectName": "beMahou",
-        "projectPath": "/Users/rubenvmu/beMahou/beMahou/beMahou.csproj",
+        "projectPath": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/beMahou.csproj",
         "packagesPath": "/Users/rubenvmu/.nuget/packages/",
-        "outputPath": "/Users/rubenvmu/beMahou/beMahou/obj/",
+        "outputPath": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/rubenvmu/.nuget/NuGet/NuGet.Config"

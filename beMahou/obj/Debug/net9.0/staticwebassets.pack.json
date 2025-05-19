@@ -1,291 +1,295 @@
 {
   "Files": [
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/obj/Debug/net9.0/scopedcss/projectbundle/beMahou.bundle.scp.css",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/obj/Debug/net9.0/scopedcss/projectbundle/beMahou.bundle.scp.css",
       "PackagePath": "staticwebassets/beMahou.dzgp7dmqpf.bundle.scp.css"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/avatars/a06fb5fe-7b7b-4812-ae62-b14dd6f5960e.png",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/avatars/a06fb5fe-7b7b-4812-ae62-b14dd6f5960e.png",
       "PackagePath": "staticwebassets/avatars/a06fb5fe-7b7b-4812-ae62-b14dd6f5960e.png"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/css/feed.css",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/css/feed.css",
       "PackagePath": "staticwebassets/css/feed.css"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/css/site.css",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/favicon.ico",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/favicon.ico",
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/images/default-avatar.png",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/images/default-avatar.png",
       "PackagePath": "staticwebassets/images/default-avatar.png"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/js/feed.js",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/images/podcast.jpeg",
+      "PackagePath": "staticwebassets/images/podcast.jpeg"
+    },
+    {
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/js/feed.js",
       "PackagePath": "staticwebassets/js/feed.js"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/js/site.js",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/js/site.js",
       "PackagePath": "staticwebassets/js/site.js"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/lib/bootstrap/LICENSE",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/lib/bootstrap/LICENSE",
       "PackagePath": "staticwebassets/lib/bootstrap"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css.map"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css.map"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css.map"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js.map"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js.map"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js.map"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
       "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/LICENSE.txt"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/lib/jquery-validation/LICENSE.md",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/lib/jquery-validation/LICENSE.md",
       "PackagePath": "staticwebassets/lib/jquery-validation/LICENSE.md"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/lib/jquery-validation/dist/additional-methods.js",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/lib/jquery-validation/dist/additional-methods.js",
       "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.js"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
       "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.min.js"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
       "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.js"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
       "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.min.js"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/lib/jquery/LICENSE.txt",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/lib/jquery/LICENSE.txt",
       "PackagePath": "staticwebassets/lib/jquery/LICENSE.txt"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/lib/jquery/dist/jquery.js",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/lib/jquery/dist/jquery.js",
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.js"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/lib/jquery/dist/jquery.min.js",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/lib/jquery/dist/jquery.min.js",
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.js"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/lib/jquery/dist/jquery.min.map",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/lib/jquery/dist/jquery.min.map",
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/lib/jquery/dist/jquery.slim.js",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/lib/jquery/dist/jquery.slim.js",
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.slim.js"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/lib/jquery/dist/jquery.slim.min.js",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/lib/jquery/dist/jquery.slim.min.js",
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.slim.min.js"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/lib/jquery/dist/jquery.slim.min.map",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/lib/jquery/dist/jquery.slim.min.map",
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.slim.min.map"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/uploads/38724b63-2774-4c60-97c3-6de4366263e4.png",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/uploads/38724b63-2774-4c60-97c3-6de4366263e4.png",
       "PackagePath": "staticwebassets/uploads/38724b63-2774-4c60-97c3-6de4366263e4.png"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/uploads/bc853dbd-d381-40f3-afd5-846ef6abde54.png",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/uploads/bc853dbd-d381-40f3-afd5-846ef6abde54.png",
       "PackagePath": "staticwebassets/uploads/bc853dbd-d381-40f3-afd5-846ef6abde54.png"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/uploads/img-mahou-san-miguel-adquiere-el-51-de-la-sociedad-que-gestionara-el-mayor-recinto-de-ocio-y-musica-690.jpg",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/uploads/img-mahou-san-miguel-adquiere-el-51-de-la-sociedad-que-gestionara-el-mayor-recinto-de-ocio-y-musica-690.jpg",
       "PackagePath": "staticwebassets/uploads/img-mahou-san-miguel-adquiere-el-51-de-la-sociedad-que-gestionara-el-mayor-recinto-de-ocio-y-musica-690.jpg"
     },
     {
-      "Id": "/Users/rubenvmu/beMahou/beMahou/wwwroot/uploads/stars.png",
+      "Id": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/wwwroot/uploads/stars.png",
       "PackagePath": "staticwebassets/uploads/stars.png"
     },
     {

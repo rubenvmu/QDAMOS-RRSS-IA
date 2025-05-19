@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RHbocivN18U=",
+  "dgSpecHash": "qBNQ2Oe/Ajw=",
   "success": true,
-  "projectFilePath": "/Users/rubenvmu/beMahou/beMahou/beMahou.csproj",
+  "projectFilePath": "/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/beMahou.csproj",
   "expectedPackageFiles": [
     "/Users/rubenvmu/.nuget/packages/azure.core/1.38.0/azure.core.1.38.0.nupkg.sha512",
     "/Users/rubenvmu/.nuget/packages/azure.identity/1.11.4/azure.identity.1.11.4.nupkg.sha512",

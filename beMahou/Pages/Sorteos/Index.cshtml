@@ -1,4 +1,57 @@
 ﻿@page
 @model MyApp.Namespace.IndexModel
 @{
+    ViewData["Title"] = "Sorteos Mahou";
 }
+
+<div class="container py-5">
+    <div class="text-center mb-5">
+        <h1 class="fw-bold" style="color: var(--be-mahou-red);">Sorteos Mahou</h1>
+        <p class="lead" style="color: var(--be-mahou-dark-red);">
+            Participa en los sorteos exclusivos de Mahou y gana experiencias únicas, entradas a conciertos, lotes de productos y mucho más. ¡La suerte Mahou puede ser tuya!
+        </p>
+        <img src="/uploads/mahou-sorteos-banner.png" alt="Mahou Sorteos" class="img-fluid my-3" style="max-width: 350px;">
+    </div>
+
+    <div class="row g-4 mb-5">
+        <!-- Sorteo 1 -->
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0">
+                <img src="/uploads/sorteo1.jpg" class="card-img-top" alt="Sorteo 1">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold" style="color: var(--be-mahou-red);">Entradas Mahou Fest</h5>
+                    <p class="card-text">Participa y gana entradas dobles para el Mahou Fest en Zaragoza.</p>
+                </div>
+                <div class="card-footer bg-white border-0">
+                    <a href="#" class="btn btn-danger w-100" style="background: var(--be-mahou-red); border: none;">Participar</a>
+                </div>
+            </div>
+        </div>
+        <!-- Sorteo 2 -->
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0">
+                <img src="/uploads/sorteo2.jpg" class="card-img-top" alt="Sorteo 2">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold" style="color: var(--be-mahou-red);">Lote Mahou Experience</h5>
+                    <p class="card-text">Gana un lote exclusivo de productos Mahou para compartir con tus amigos.</p>
+                </div>
+                <div class="card-footer bg-white border-0">
+                    <a href="#" class="btn btn-danger w-100" style="background: var(--be-mahou-red); border: none;">Participar</a>
+                </div>
+            </div>
+        </div>
+        <!-- Sorteo 3 -->
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0">
+                <img src="/uploads/sorteo3.jpg" class="card-img-top" alt="Sorteo 3">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold" style="color: var(--be-mahou-red);">Meet & Greet Mahou</h5>
+                    <p class="card-text">Vive una experiencia única con tus artistas favoritos gracias a Mahou.</p>
+                </div>
+                <div class="card-footer bg-white border-0">
+                    <a href="#" class="btn btn-danger w-100" style="background: var(--be-mahou-red); border: none;">Participar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

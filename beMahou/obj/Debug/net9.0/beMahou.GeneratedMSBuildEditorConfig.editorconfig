@@ -17,117 +17,121 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = beMahou
 build_property.RootNamespace = beMahou
-build_property.ProjectDir = /Users/rubenvmu/beMahou/beMahou/
+build_property.ProjectDir = /Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = /Users/rubenvmu/beMahou/beMahou
+build_property.MSBuildProjectDirectory = /Users/rubenvmu/QDAMOS-RRSS-IA/beMahou
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[/Users/rubenvmu/beMahou/beMahou/Areas/Identity/Pages/Account/Login.cshtml]
+[/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9Mb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/rubenvmu/beMahou/beMahou/Areas/Identity/Pages/Account/Logout.cshtml]
+[/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/Areas/Identity/Pages/Account/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9Mb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/rubenvmu/beMahou/beMahou/Areas/Identity/Pages/Account/Register.cshtml]
+[/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9SZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/rubenvmu/beMahou/beMahou/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9fVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/rubenvmu/beMahou/beMahou/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/rubenvmu/beMahou/beMahou/Areas/Identity/Pages/_ViewImports.cshtml]
+[/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/rubenvmu/beMahou/beMahou/Areas/Identity/Pages/_ViewStart.cshtml]
+[/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/rubenvmu/beMahou/beMahou/Pages/Bares/Index.cshtml]
+[/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/Pages/Bares/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQmFyZXMvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/rubenvmu/beMahou/beMahou/Pages/Categoria/Quedadas.cshtml]
+[/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/Pages/Blog/Pages/Blog/Blog.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQmxvZy9QYWdlcy9CbG9nL0Jsb2cuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/Pages/Categoria/Quedadas.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2F0ZWdvcmlhL1F1ZWRhZGFzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/rubenvmu/beMahou/beMahou/Pages/Conciertos/Index.cshtml]
+[/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/Pages/Conciertos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ29uY2llcnRvcy9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/rubenvmu/beMahou/beMahou/Pages/Create.cshtml]
+[/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/Pages/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/rubenvmu/beMahou/beMahou/Pages/Delete.cshtml]
+[/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/Pages/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/rubenvmu/beMahou/beMahou/Pages/Details.cshtml]
+[/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/Pages/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/rubenvmu/beMahou/beMahou/Pages/Edit.cshtml]
+[/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/Pages/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/rubenvmu/beMahou/beMahou/Pages/Error.cshtml]
+[/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/rubenvmu/beMahou/beMahou/Pages/Festivales/Index.cshtml]
+[/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/Pages/Festivales/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRmVzdGl2YWxlcy9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/rubenvmu/beMahou/beMahou/Pages/Index.cshtml]
+[/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/rubenvmu/beMahou/beMahou/Pages/Mapa/Index.cshtml]
+[/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/Pages/Mapa/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTWFwYS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/rubenvmu/beMahou/beMahou/Pages/Privacy.cshtml]
+[/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/rubenvmu/beMahou/beMahou/Pages/Quedadas/Index.cshtml]
+[/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/Pages/Quedadas/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUXVlZGFkYXMvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/rubenvmu/beMahou/beMahou/Pages/Shared/_LoginPartial.cshtml]
+[/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/Pages/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/rubenvmu/beMahou/beMahou/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/rubenvmu/beMahou/beMahou/Pages/Sorteos/Index.cshtml]
+[/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/Pages/Sorteos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU29ydGVvcy9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/rubenvmu/beMahou/beMahou/Pages/_ViewImports.cshtml]
+[/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/rubenvmu/beMahou/beMahou/Pages/_ViewStart.cshtml]
+[/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/rubenvmu/beMahou/beMahou/Pages/Shared/_Layout.cshtml]
+[/Users/rubenvmu/QDAMOS-RRSS-IA/beMahou/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-3setzn2fgv

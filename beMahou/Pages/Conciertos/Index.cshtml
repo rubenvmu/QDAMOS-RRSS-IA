@@ -1,4 +1,61 @@
 ﻿@page
 @model MyApp.Namespace.IndexModel
 @{
+    ViewData["Title"] = "Podcast Mahou";
 }
+
+<div class="container py-5">
+    <div class="text-center mb-5">
+        <h1 class="fw-bold" style="color: var(--be-mahou-red);">Podcast Mahou</h1>
+        <p class="lead" style="color: var(--be-mahou-dark-red);">
+            Descubre los mejores podcasts de Mahou sobre música, cultura, bares y experiencias únicas. Escucha entrevistas, historias y debates con el mejor ambiente.
+        </p>
+        
+
+    </div>
+
+    <div class="row g-4">
+        <!-- Podcast 1 -->
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0">
+                <img src="/images/podcast.jpeg" class="card-img-top" alt="Podcast 1">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold" style="color: var(--be-mahou-red);">Mahou Talks: Música y Bares</h5>
+                    <p class="card-text">Episodio especial grabado en Zaragoza con artistas invitados y anécdotas de bar.</p>
+                    <audio controls class="w-100 mt-2">
+                        <source src="/uploads/podcast1.mp3" type="audio/mpeg">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+                </div>
+            </div>
+        </div>
+        <!-- Podcast 2 -->
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0">
+                <img src="/images/podcast.jpeg" class="card-img-top" alt="Podcast 2">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold" style="color: var(--be-mahou-red);">Charlas Mahou: Cultura y Amistad</h5>
+                    <p class="card-text">Conversaciones sobre la importancia de los bares en la vida social madrileña.</p>
+                    <audio controls class="w-100 mt-2">
+                        <source src="/uploads/podcast2.mp3" type="audio/mpeg">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+                </div>
+            </div>
+        </div>
+        <!-- Podcast 3 -->
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0">
+                <img src="/images/podcast.jpeg" class="card-img-top" alt="Podcast 3">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold" style="color: var(--be-mahou-red);">Mahou Stories: Experiencias Únicas</h5>
+                    <p class="card-text">Historias reales de clientes y hosteleros que forman parte de la familia Mahou.</p>
+                    <audio controls class="w-100 mt-2">
+                        <source src="/uploads/podcast3.mp3" type="audio/mpeg">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>@ViewData["Title"] - beMahou</title>
+    <title>@ViewData["Title"] - QDAMOS+IA+RRSS</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/mobile.css" asp-append-version="true" id="mobile-css" disabled />
@@ -54,26 +54,29 @@
     <nav id="be-mahou-desktop-nav" class="navbar navbar-expand-md navbar-light bg-light fixed-top">
         <div class="container">
             <a class="navbar-brand fw-bold text-uppercase fs-3" href="/">
-                <i class="fas fa-beer me-2"></i>beMahou
+                </i>QDAMOS
             </a>
             
             <div class="d-flex align-items-center gap-3">
     <!-- Menú principal -->
     <ul class="navbar-nav d-none d-lg-flex">
         <li class="nav-item mx-2">
-            <a class="nav-link fw-bold" asp-page="/Categoria/Sorteos">Bares</a>
+            <a class="nav-link fw-bold" href="/Mapa">Bares Mahou</a>
         </li>
         <li class="nav-item mx-2">
-            <a class="nav-link fw-bold" asp-page="/Conciertos">Festivales</a>
+            <a class="nav-link fw-bold" href="/Conciertos">Podcast</a>
         </li>
         <li class="nav-item mx-2">
-            <a class="nav-link fw-bold" asp-page="/Categoria/Quedadas">Quedadas</a>
+            <a class="nav-link fw-bold" href="/Quedadas">Quedadas</a>
         </li>
         <li class="nav-item mx-2">
-            <a class="nav-link fw-bold" asp-page="/Categoria/Eventos">Eventos</a>
+            <a class="nav-link fw-bold" href="/Sorteos">Sorteos</a>
         </li>
         <li class="nav-item mx-2">
-            <a class="nav-link fw-bold" asp-page="/Categoria/Sorteos">Sorteos</a>
+            <a class="nav-link fw-bold" href="/Festivales">Festivales</a>
+        </li>
+        <li class="nav-item mx-2">
+            <a class="nav-link fw-bold" href="/Blog">Blog</a>
         </li>
     </ul>
 
@@ -105,25 +108,29 @@
     <nav id="be-mahou-mobile-nav" class="navbar navbar-dark bg-danger fixed-bottom d-md-none">
         <div class="container-fluid px-0">
             <div class="d-flex justify-content-around w-100 align-items-center">
-                <a href="/" class="be-mahou-mobile-nav-item text-white text-center py-2">
+                <a href="/Mapa" class="be-mahou-mobile-nav-item text-white text-center py-2">
+                    <i class="fas fa-beer-mug-empty fa-lg d-block mb-1"></i>
+                    <span class="small">Bares</span>
+                </a>
+                <a href="/Conciertos" class="be-mahou-mobile-nav-item text-white text-center py-2">
                     <i class="fas fa-music fa-lg d-block mb-1"></i>
-                    <span class="small"></span>
-                </a>
-                <a href="/Podcast" class="be-mahou-mobile-nav-item text-white text-center py-2">
-                    <i class="fas fa-radio fa-lg d-block mb-1"></i>
-                    <span class="small"></span>
-                </a>
-                <a href="/Quedadas" class="be-mahou-mobile-nav-item text-white text-center py-2">
-                    <i class="fas fa-plus-circle fa-2x d-block mb-1"></i>
-                    <span class="small"></span>
+                    <span class="small">Conciertos</span>
                 </a>
                 <a href="/Quedadas" class="be-mahou-mobile-nav-item text-white text-center py-2">
                     <i class="fas fa-user-group fa-lg d-block mb-1"></i>
-                    <span class="small"></span>
+                    <span class="small">Quedadas</span>
                 </a>
-                <a href="/Perfil" class="be-mahou-mobile-nav-item text-white text-center py-2">
+                <a href="/Sorteos" class="be-mahou-mobile-nav-item text-white text-center py-2">
                     <i class="fas fa-gift fa-lg d-block mb-1"></i>
-                    <span class="small"></span>
+                    <span class="small">Sorteos</span>
+                </a>
+                <a href="/Festivales" class="be-mahou-mobile-nav-item text-white text-center py-2">
+                    <i class="fas fa-star fa-lg d-block mb-1"></i>
+                    <span class="small">Festivales</span>
+                </a>
+                <a href="/Blog" class="be-mahou-mobile-nav-item text-white text-center py-2">
+                    <i class="fas fa-star fa-lg d-block mb-1"></i>
+                    <span class="small">Blog</span>
                 </a>
             </div>
         </div>
